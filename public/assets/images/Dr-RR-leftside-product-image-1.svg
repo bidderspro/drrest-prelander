@@ -1,0 +1,26 @@
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Product packaging -->
+  <rect x="50" y="50" width="300" height="400" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Product title area -->
+  <rect x="70" y="70" width="260" height="60" rx="10" fill="#1e40af"/>
+  <text x="200" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Dr. RestRight</text>
+  <text x="200" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Mouth Tape</text>
+  
+  <!-- Product strips illustration -->
+  <rect x="80" y="150" width="240" height="8" rx="4" fill="#22c55e"/>
+  <rect x="80" y="170" width="240" height="8" rx="4" fill="#22c55e"/>
+  <rect x="80" y="190" width="240" height="8" rx="4" fill="#22c55e"/>
+  <rect x="80" y="210" width="240" height="8" rx="4" fill="#22c55e"/>
+  <rect x="80" y="230" width="240" height="8" rx="4" fill="#22c55e"/>
+  
+  <!-- Features text -->
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">PREMIUM QUALITY</text>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">30 Night Strips</text>
+  <text x="200" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Breathable • Comfortable</text>
+  <text x="200" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Better Sleep Quality</text>
+  
+  <!-- Bottom badge -->
+  <circle cx="200" cy="380" r="30" fill="#fbbf24"/>
+  <text x="200" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">#1 RATED</text>
+</svg>

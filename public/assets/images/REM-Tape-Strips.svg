@@ -1,0 +1,31 @@
+<svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="25" y="50" width="300" height="150" rx="15" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Individual tape strips -->
+  <rect x="50" y="80" width="250" height="12" rx="6" fill="#22c55e"/>
+  <rect x="50" y="100" width="250" height="12" rx="6" fill="#22c55e"/>
+  <rect x="50" y="120" width="250" height="12" rx="6" fill="#22c55e"/>
+  <rect x="50" y="140" width="250" height="12" rx="6" fill="#22c55e"/>
+  <rect x="50" y="160" width="250" height="12" rx="6" fill="#22c55e"/>
+  
+  <!-- Perforations -->
+  <g stroke="#16a34a" stroke-width="1" stroke-dasharray="2,2">
+    <line x1="40" y1="86" x2="310" y2="86"/>
+    <line x1="40" y1="106" x2="310" y2="106"/>
+    <line x1="40" y1="126" x2="310" y2="126"/>
+    <line x1="40" y1="146" x2="310" y2="146"/>
+    <line x1="40" y1="166" x2="310" y2="166"/>
+  </g>
+  
+  <!-- Brand text on strips -->
+  <text x="175" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Dr. RestRight</text>
+  <text x="175" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Dr. RestRight</text>
+  <text x="175" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Dr. RestRight</text>
+  <text x="175" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Dr. RestRight</text>
+  <text x="175" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">Dr. RestRight</text>
+  
+  <!-- Title -->
+  <text x="175" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">REM Tape Strips</text>
+  <text x="175" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">30 Premium Mouth Tapes</text>
+</svg>
