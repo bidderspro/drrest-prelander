@@ -905,8 +905,8 @@ export default function PreLandingPage() {
                 </svg>
 
                 {/* Top Pick Badge */}
-                <div className="absolute left-2.5 top-2.5 flex justify-center items-center w-[180px] h-[53px] px-[23px] py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
-                  <div className="flex items-center gap-2">
+                <div className="absolute left-2.5 top-2.5 flex justify-center items-center w-[180px] h-[53px] px-[23px] py-[13px] gap-2 bg-[#00C88F] rounded-[32px]">
+                  <div className="flex items-center justify-center w-[136px] h-[45px] px-[23px] py-[13px] gap-[10px] flex-shrink-0">
                     <svg
                       width="28"
                       height="29"
