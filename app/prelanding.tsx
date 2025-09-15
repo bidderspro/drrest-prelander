@@ -8,6 +8,7 @@ import productZZZ from '@images/zzz-tape-3.svg';
 import comparisonImg from '@images/Dr-RR-Tape-comparison.svg';
 import logoImg from '@images/VBG_logo.svg';
 import verifiedIcon from '@images/verified.svg';
+import leoProfile from '@images/Leo-B.svg';
 
 export default function PreLandingPage() {
   return (
@@ -55,6 +56,87 @@ export default function PreLandingPage() {
                 </div>
               </div>
             </section>
+            
+            {/* How We Tested Section */}
+            <section className="py-8 lg:py-12">
+              <div className="space-y-8 lg:space-y-10">
+                <h2 className="text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[150%] text-[#333]">
+                  How We Tested the Top 10 Mouth Tapes
+                </h2>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                          Adhesive Strength (The All-Night Challenge)
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+                      We tested each tape over multiple nights — side sleepers, restless movers, even sweaty conditions. If it peeled off or curled by 2am, it failed. Because if a tape can't last till morning, it can't solve the problem.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                          Comfort & Removal (Morning After Test)
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+                      No one wants a sore, red mark where tape used to be. We checked for irritation and residue, especially on 45+ skin. If a tape punishes you in the morning, it doesn't matter how well it worked overnight.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                          Safety & Peace of Mind (Emergency Readiness)
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+                      We mimicked "real-life moments" coughing, sneezing, sipping water. The best tapes stayed put when needed, but peeled off instantly if something went wrong. If you can't remove it half-asleep, it's not safe.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                          Sleep Results (The Real Measure)
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+                      The ultimate test: did people feel better? We tracked snoring, interruptions, and oxygen with apps and wearables. Then we asked the only question that matters: did mornings feel better? If you wake up groggy, the tape has failed its mission.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="text-base sm:text-lg font-normal font-['Poppins'] text-zinc-800 space-y-4">
+                  <p>After weeks of nightly testing and hundreds of hours of data, three brands consistently outperformed the rest.</p>
+                  <p>But when it came to comfort, safety, and actual sleep improvements, only one stood above them all: Dr. RestRight.</p>
+                </div>
+              </div>
+            </section>
+            
             {/* Product Comparison Section */}
             <section className="py-8 lg:py-12">
               <h2 className="text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[48px] text-zinc-800 mb-8 lg:mb-10">
@@ -118,7 +200,7 @@ export default function PreLandingPage() {
                           
                           {/* CTA and Price */}
                           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                            <button className="w-full sm:w-48 h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
+                            <button className="w-full sm:w-52 h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
                               GET 20% OFF
                             </button>
                             <div className="flex items-center gap-3">
@@ -309,89 +391,127 @@ export default function PreLandingPage() {
                     <p>By the end of testing, Dr. RestRight wasn't just the highest-rated tape, it was the only one testers wanted to keep using night after night. For adults over 45, tired of clunky devices and desperate to finally wake up refreshed, it proved to be the clear winner.</p>
                   </div>
                   
-                  <button className="w-full h-20 p-3 bg-blue-700 rounded-xl text-white text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
+                  <button className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
                     Check availability
                   </button>
                 </div>
               </div>
             </section>
             
-            {/* How We Tested Section */}
+            {/* Conclusion Section */}
             <section className="py-8 lg:py-12">
-              <div className="space-y-8 lg:space-y-10">
-                <h2 className="text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[150%] text-[#333]">
-                  How We Tested the Top 10 Mouth Tapes
-                </h2>
+              <div className="max-w-4xl flex flex-col gap-6">
+                <h2 className="text-zinc-800 text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[48px]">Conclusion</h2>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
-                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
-                          Adhesive Strength (The All-Night Challenge)
-                        </h3>
+                <div className="relative">
+                  {/* Product Card */}
+                  <div className="relative w-full max-w-[869px] h-[351px] overflow-hidden" style={{ filter: 'drop-shadow(0 0 20px rgba(0, 200, 143, 0.25))' }}>
+                    {/* Background SVG */}
+                    <div className="absolute inset-0 w-full h-full">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="909" 
+                        height="391" 
+                        viewBox="0 0 909 391" 
+                        fill="none"
+                        className="w-full h-full"
+                        preserveAspectRatio="none"
+                      >
+                        <g filter="url(#filter0_d_12_594)">
+                          <path d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107H278C307.823 107 332 82.8234 332 53C332 52.0233 331.974 51.0527 331.923 50.0887C331.217 36.8145 340.047 20 353.34 20H865Z" fill="white"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_12_594" x="0" y="0" width="909" height="391" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="10"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_594"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_594" result="shape"/>
+                          </filter>
+                        </defs>
+                      </svg>
+                    </div>
+                    
+                    {/* Best Overall Badge */}
+                    <div className="absolute left-6 top-6 z-20">
+                      <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify-center items-center">
+                        <span className="text-white text-base font-semibold font-['Poppins']">Best Overall Mouth Tape</span>
                       </div>
                     </div>
-                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
-                      We tested each tape over multiple nights — side sleepers, restless movers, even sweaty conditions. If it peeled off or curled by 2am, it failed. Because if a tape can't last till morning, it can't solve the problem.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
-                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
-                          Comfort & Removal (Morning After Test)
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
-                      No one wants a sore, red mark where tape used to be. We checked for irritation and residue, especially on 45+ skin. If a tape punishes you in the morning, it doesn't matter how well it worked overnight.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
-                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
-                          Safety & Peace of Mind (Emergency Readiness)
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
-                      We mimicked "real-life moments" coughing, sneezing, sipping water. The best tapes stayed put when needed, but peeled off instantly if something went wrong. If you can't remove it half-asleep, it's not safe.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
-                        <Image src={verifiedIcon} alt="verified" width={24} height={24} className="w-6 h-6" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
-                          Sleep Results (The Real Measure)
-                        </h3>
+                    
+                    {/* Content */}
+                    <div className="absolute inset-0 z-10 px-14 py-9 flex items-end">
+                      <div className="flex items-end gap-24 w-full">
+                        <div className="flex-shrink-0">
+                          <Image 
+                            src={productDrRR} 
+                            alt="Dr. RestRight Mouth Tape" 
+                            width={195} 
+                            height={195} 
+                            className="w-[195px] h-[195px]" 
+                            style={{ aspectRatio: '1/1' }}
+                          />
+                        </div>
+                        
+                        <div className="flex-1 max-w-[482px] flex flex-col gap-6">
+                          <div className="flex flex-col gap-3">
+                            <h3 className="text-zinc-800 text-lg font-bold font-['Poppins']">Dr. RestRight Mouth Tape</h3>
+                            <p className="text-zinc-800 text-base font-normal font-['Poppins'] leading-normal">
+                              Dr. RestRight isn't just another sleep tape — it's the only one proven to silence snoring, stop dry mouth, and still let you breathe easy if congestion strikes. That balance of comfort, safety, and doctor-formulated design is why it outperformed every other brand we tested — and why men and women over 45 choose Dr. RestRight for real, reliable rest.
+                            </p>
+                          </div>
+                          
+                          <div className="flex items-center gap-36">
+                            <button className="w-48 h-14 px-3 py-3 bg-blue-700 rounded-xl flex justify-center items-center">
+                              <span className="text-white text-base font-medium font-['Poppins']">Check availability</span>
+                            </button>
+                            <div className="w-32 flex items-center gap-2">
+                              <span className="text-zinc-800 text-xl font-bold font-['Poppins']">$23.99</span>
+                              <span className="text-zinc-800 text-lg font-medium font-['Poppins'] line-through">$29.99</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
-                      The ultimate test: did people feel better? We tracked snoring, interruptions, and oxygen with apps and wearables. Then we asked the only question that matters: did mornings feel better? If you wake up groggy, the tape has failed its mission.
-                    </p>
                   </div>
                 </div>
                 
-                <div className="text-base sm:text-lg font-normal font-['Poppins'] text-zinc-800 space-y-4">
-                  <p>After weeks of nightly testing and hundreds of hours of data, three brands consistently outperformed the rest.</p>
-                  <p>But when it came to comfort, safety, and actual sleep improvements, only one stood above them all: Dr. RestRight.</p>
+                <div className="text-zinc-800 text-base sm:text-lg font-normal font-['Poppins'] leading-relaxed space-y-4">
+                  <p>After weeks of testing the top brands, Dr. RestRight emerged as the only tape that truly delivered on every promise. Where others forced a trade-off — comfort without staying power, or strength that punished the skin — Dr. RestRight offered both in one design. Its doctor-formulated adhesive kept a secure seal all night, yet lifted cleanly in the morning without redness or residue. For adults over 45, who often struggle with sensitive or aging skin, that balance made all the difference.</p>
+                  
+                  <p>Even more, it's the world's first mouth tape infused with calming aromatherapy features, lavender and chamomile-lavender options that helped testers relax before bed and drift into deeper rest. What began as a "tape test" quickly became a nightly ritual our testers looked forward to.</p>
+                  
+                  <p>REM Tape Strips offered softness and ease of use, but its weak adhesion made results inconsistent. A tape that doesn't stay on through the night simply can't solve snoring or mouth breathing. ZZZ Tape, on the other hand, proved unbreakable in its hold — but at the cost of comfort. Testers reported irritation, stiffness, and a harsher feel, making it difficult to use night after night on sensitive or aging skin.</p>
+                  
+                  <p>In the end, Dr. RestRight didn't just outperform the competition, it redefined what mouth taping could be. For men and women 45+ who are serious about sleeping better, breathing easier, and finally moving beyond CPAP machines or restless nights, there is only one choice that checks every box: Dr. RestRight.</p>
+                </div>
+              </div>
+            </section>
+            
+            {/* Author Bio Section */}
+            <section className="py-8 lg:py-12">
+              <div className="bg-blue-100 rounded-2xl p-6 lg:p-8">
+                <div className="flex flex-col sm:flex-row gap-6 items-start">
+                  <div className="flex-shrink-0">
+                    <Image 
+                      src={leoProfile} 
+                      alt="Leo B." 
+                      width={84} 
+                      height={84} 
+                      className="w-20 h-20 rounded-xl" 
+                    />
+                  </div>
+                  <div className="flex-1 space-y-4">
+                    <h3 className="text-zinc-800 text-xl font-semibold font-['Poppins'] leading-loose">Leo B.</h3>
+                    <div className="text-base font-normal font-['Poppins'] leading-normal text-zinc-800">
+                      <span>The </span>
+                      <span className="font-bold">Verified Buyers Guide</span>
+                      <span> is a trusted resource for practical, no-nonsense sleep advice, founded by Dr. Stephen Taylor — a 52 year old physician who personally battled years of snoring, CPAP frustration, and restless nights. After seeing how poor sleep was stealing energy and health from both his patients and himself, Dr. Taylor made it his mission to find solutions that actually work for people over 45. Today, Verified Buyers Guide brings together hands-on testing, medical insight, and real-world experience to help readers breathe easier, sleep deeper, and wake up with energy they thought they'd lost for good.</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -464,7 +584,7 @@ export default function PreLandingPage() {
                           </p>
                         </div>
                         
-                        <button className="w-full h-14 p-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
+                        <button className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
                           GET 20% OFF
                         </button>
                       </div>
@@ -477,13 +597,13 @@ export default function PreLandingPage() {
         </div>
       </div>
 
-      {/* Additional sections would continue here - for now I'll add a placeholder for the remaining content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="text-center text-gray-500">
-          <p>[Additional sections like Runner-Up products, Conclusion, Author bio, and Footer would continue here...]</p>
-          <p>The main layout structure has been fixed. The remaining sections can be added following the same responsive pattern.</p>
+      {/* Footer */}
+      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col sm:flex-row justify-start items-start gap-8 sm:gap-36">
+          <div className="text-neutral-500 text-base font-normal font-['Poppins']">@2025 Verified Buyers Guide</div>
+          <div className="text-neutral-500 text-base font-normal font-['Poppins'] underline cursor-pointer hover:text-neutral-600 transition-colors">Privacy Policy</div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
