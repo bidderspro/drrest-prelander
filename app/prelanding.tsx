@@ -443,8 +443,8 @@ export default function PreLandingPage() {
                     </div>
                     
                     {/* Content */}
-                    <div className="absolute inset-0 z-10 px-14 py-9 flex items-end">
-                      <div className="flex items-end gap-24 w-full">
+                    <div className="absolute inset-0 z-10 px-14 py-9 flex items-end overflow-hidden">
+                      <div className="flex items-end gap-16 w-full max-w-full">
                         <div className="flex-shrink-0">
                           <Image 
                             src={productDrRR} 
@@ -456,21 +456,21 @@ export default function PreLandingPage() {
                           />
                         </div>
                         
-                        <div className="flex-1 max-w-[482px] flex flex-col gap-6">
-                          <div className="flex flex-col gap-3">
-                            <h3 className="text-zinc-800 text-lg font-bold font-['Poppins']">Dr. RestRight Mouth Tape</h3>
-                            <p className="text-zinc-800 text-base font-normal font-['Poppins'] leading-normal">
+                        <div className="flex flex-col items-start gap-6" style={{ width: '482px', height: '286px' }}>
+                          <div className="flex flex-col gap-2">
+                            <h3 className="text-zinc-800 font-bold font-['Poppins'] truncate" style={{ fontSize: '18px' }}>Dr. RestRight Mouth Tape</h3>
+                            <p className="text-zinc-800 font-normal font-['Poppins'] leading-relaxed" style={{ fontSize: '16px' }}>
                               Dr. RestRight isn't just another sleep tape — it's the only one proven to silence snoring, stop dry mouth, and still let you breathe easy if congestion strikes. That balance of comfort, safety, and doctor-formulated design is why it outperformed every other brand we tested — and why men and women over 45 choose Dr. RestRight for real, reliable rest.
                             </p>
                           </div>
                           
-                          <div className="flex items-center gap-36">
-                            <button className="w-48 h-14 px-3 py-3 bg-blue-700 rounded-xl flex justify-center items-center">
-                              <span className="text-white text-base font-medium font-['Poppins']">Check availability</span>
+                          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                            <button className="w-44 h-12 px-3 py-2 bg-blue-700 rounded-xl flex justify-center items-center flex-shrink-0">
+                              <span className="text-white text-sm font-medium font-['Poppins']">Check availability</span>
                             </button>
-                            <div className="w-32 flex items-center gap-2">
-                              <span className="text-zinc-800 text-xl font-bold font-['Poppins']">$23.99</span>
-                              <span className="text-zinc-800 text-lg font-medium font-['Poppins'] line-through">$29.99</span>
+                            <div className="flex items-center gap-2 flex-shrink-0">
+                              <span className="text-zinc-800 text-lg font-bold font-['Poppins']">$23.99</span>
+                              <span className="text-zinc-800 text-base font-medium font-['Poppins'] line-through">$29.99</span>
                             </div>
                           </div>
                         </div>
