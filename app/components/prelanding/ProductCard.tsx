@@ -1,0 +1,162 @@
+import Image, { StaticImageData } from "next/image";
+
+type ProductCardProps = {
+  image: StaticImageData;
+  alt: string;
+  title: string;
+  shortDescription: string;
+  descriptionLines: string[];
+  ratingLabel: string; // e.g., "4.9 Ratings"
+  price: string; // e.g., "$23.99"
+  oldPrice?: string; // optional, e.g., "$29.99"
+  ctaLabel: string; // e.g., "GET 20% OFF" or "Check Availability"
+  isBestOverall?: boolean;
+};
+
+export default function ProductCard(props: ProductCardProps) {
+  const {
+    image,
+    alt,
+    title,
+    shortDescription,
+    descriptionLines,
+    ratingLabel,
+    price,
+    oldPrice,
+    ctaLabel,
+    isBestOverall,
+  } = props;
+
+  return (
+    <div className="space-y-6">
+      {/* Mobile variant */}
+      <div className="lg:hidden">
+        <div className="w-full max-w-[360px] bg-white rounded-2xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] flex flex-col items-stretch">
+          {isBestOverall && (
+            <div className="w-full h-14 px-4 bg-emerald-500 rounded-tl-2xl rounded-tr-2xl inline-flex justify-center items-center">
+              <div className="text-white text-sm font-semibold font-['Poppins']">Best Overall</div>
+            </div>
+          )}
+
+          <div className="w-full flex flex-col gap-6 px-4 pt-6 pb-4">
+            <Image src={image} alt={alt} width={259} height={259} className="w-64 h-64 mx-auto" />
+
+            <div className="self-stretch flex flex-col gap-6">
+              <div className="self-stretch flex flex-col gap-4">
+                <div className="self-stretch flex flex-col items-center gap-3">
+                  <div className="w-36 h-4 inline-flex justify-start items-center gap-1">
+                    <div className="flex justify-start items-center">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
+                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <div className="text-neutral-800 text-[10px] font-medium font-['Poppins']">{ratingLabel}</div>
+                  </div>
+                  <div className="self-stretch flex flex-col gap-1">
+                    <div className="text-zinc-800 text-sm font-bold font-['Poppins']">{title}</div>
+                    <div className="text-neutral-500 text-xs font-normal font-['Poppins']">{shortDescription}</div>
+                  </div>
+                </div>
+
+                <div className="self-stretch">
+                  <span className="text-zinc-800 text-xs font-semibold font-['Poppins']">Description:<br/></span>
+                  <span className="text-zinc-800 text-xs font-normal font-['Poppins']">
+                    {descriptionLines.map((line, idx) => (
+                      <span key={idx}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+                  </span>
+                </div>
+              </div>
+
+              <div className="self-stretch inline-flex justify-between items-center">
+                <button className="w-44 h-12 px-4 bg-blue-700 rounded-xl flex justify-center items-center whitespace-nowrap">
+                  <div className="text-white text-xs font-medium font-['Poppins']">{ctaLabel}</div>
+                </button>
+                <div className="w-36 flex justify-end items-center gap-2">
+                  <div className="text-zinc-800 text-sm font-bold font-['Poppins']">{price}</div>
+                  {oldPrice && (
+                    <div className="text-zinc-800 text-xs font-medium font-['Poppins'] line-through">{oldPrice}</div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop variant */}
+      <div className="hidden lg:block">
+        <div className={`bg-white rounded-2xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] min-h-[420px] ${isBestOverall ? "overflow-hidden" : "p-6 lg:p-8"}`}>
+          <div className="flex">
+            {isBestOverall && (
+              <div className="w-14 bg-emerald-500 rounded-tl-2xl rounded-bl-2xl flex items-center justify-center">
+                <div className="transform -rotate-90 text-white text-base font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</div>
+              </div>
+            )}
+
+            <div className={`flex-1 ${isBestOverall ? "p-6 lg:p-8" : ""}`}>
+              <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-full">
+                <div className="flex-shrink-0 lg:w-56">
+                  <Image src={image} alt={alt} width={224} height={224} className="w-full h-auto max-w-56 mx-auto lg:mx-0 mb-4" />
+                  <div className="flex items-center gap-2 justify-center lg:justify-start">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
+                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <span className="text-zinc-800 text-sm font-medium font-['Poppins']">{ratingLabel}</span>
+                  </div>
+                </div>
+
+                <div className="flex-1 flex flex-col justify-between gap-6">
+                  <div className="space-y-3">
+                    {isBestOverall ? (
+                      <div className="space-y-2">
+                        <h3 className="text-xl font-semibold font-['Poppins'] text-zinc-800">{title}</h3>
+                        <p className="text-neutral-500 text-sm font-normal font-['Poppins']">{shortDescription}</p>
+                      </div>
+                    ) : (
+                      <h3 className="text-xl font-semibold font-['Poppins'] text-zinc-800">{title}</h3>
+                    )}
+                    <div className="space-y-2">
+                      <h4 className="text-base font-semibold font-['Poppins'] text-zinc-800">Description:</h4>
+                      <p className="text-base font-normal font-['Poppins'] text-zinc-800">
+                        {descriptionLines.map((line, idx) => (
+                          <span key={idx}>
+                            {line}
+                            <br />
+                          </span>
+                        ))}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <button className="w-full sm:w-52 h-14 px-6 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors whitespace-nowrap">
+                      {ctaLabel}
+                    </button>
+                    <div className="flex items-center gap-3">
+                      <span className="text-zinc-800 text-lg font-bold font-['Poppins']">{price}</span>
+                      {oldPrice && (
+                        <span className="text-zinc-800 text-base font-normal font-['Poppins'] line-through">{oldPrice}</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
