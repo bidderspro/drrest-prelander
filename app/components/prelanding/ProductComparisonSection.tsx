@@ -11,17 +11,18 @@ export default function ProductComparisonSection() {
         The Results: Our Top 3 Picks
       </h2>
 
-      <div className="space-y-6 w-full">
+      <div className="space-y-8 sm:space-y-10 lg:space-y-12 w-full">
         <ProductCard
           image={productDrRR}
           alt="Dr. RestRight Mouth Tape"
           title="Dr. RestRight Mouth Tape"
           shortDescription="Dr. RestRight was the clear winner across every category."
           descriptionLines={[
+            "Dr. RestRight was the clear winner across every category.",
             "Held securely all night, but peeled off gently in the morning.",
             "Hypoallergenic adhesive worked even for sensitive skin.",
             "Unique doctor-formulated aromatherapy options (lavender or chamomile-lavender) calmed the nervous system before sleep.",
-            "Breathable design allowed safe airflow in case of nasal congestion.",
+            "Breathable design allowed safe airflow in case of nasal congestion."
           ]}
           ratingLabel="4.9 Ratings"
           price="$23.99"

@@ -62,15 +62,15 @@ export default function Sidebar() {
             </defs>
           </svg>
 
-          <div className="absolute left-2.5 top-2.5 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
+          <div className="absolute left-2.5 top-2.5 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
             <div className="flex items-center gap-2">
               <svg
-                width="28"
-                height="29"
+                width="22"
+                height="23"
                 viewBox="0 0 22 23"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                className="w-5 h-5 sm:w-6 sm:h-6"
               >
                 <path
                   fillRule="evenodd"
@@ -105,39 +105,42 @@ export default function Sidebar() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-['Poppins'] whitespace-nowrap">
+              <span className="text-white text-xs sm:text-sm font-semibold font-['Poppins'] whitespace-nowrap">
                 Top Pick
               </span>
             </div>
           </div>
 
-          <div className="absolute inset-0 p-4 sm:p-5 flex flex-col">
-            <div className="flex-1 flex flex-col">
+          <div className="absolute inset-0 p-4 sm:p-6 flex flex-col z-10">
+            <div className="flex-1 flex flex-col pt-12 sm:pt-14">
               <div className="flex-1 flex flex-col justify-center items-center">
-                <div className="flex flex-row justify-center items-center gap-2 mb-4">
+                <div className="flex justify-center items-center mb-6">
                   <Image
                     src={productDrRR}
                     alt="Dr. RestRight Mouth Tape"
                     width={120}
                     height={120}
-                    className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
-                    sizes="(max-width: 640px) 6rem, (max-width: 768px) 8rem, 9rem"
+                    className="w-28 h-28 sm:w-32 sm:h-32 object-contain"
+                    sizes="(max-width: 640px) 7rem, 8rem"
                     priority
                   />
                 </div>
               </div>
               
-              <div className="mt-2 sm:mt-4">
-                <h3 className="text-sm sm:text-base font-bold font-['Poppins'] text-zinc-800 mb-2">
+              <div className="mt-2">
+                <h3 className="text-sm sm:text-base font-bold font-['Poppins'] text-zinc-800 mb-3">
                   Dr. RestRight Mouth Tape
                 </h3>
-                <p className="text-xs sm:text-sm font-normal font-['Poppins'] text-zinc-800 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm font-normal font-['Poppins'] text-zinc-800 leading-relaxed mb-6">
                   After comparing nearly a dozen brands, this was the
                   one that actually worked — safe, effective, and
                   comfortable every night.
                 </p>
                 
-                <button type="button" className="w-full h-10 sm:h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                <button 
+                  type="button" 
+                  className="w-full h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
                   GET 20% OFF
                 </button>
               </div>

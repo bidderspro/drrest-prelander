@@ -46,8 +46,8 @@ export default function BestOverallSection() {
             </div>
           </div>
 
-          <div className="relative z-10 p-6 lg:p-14 pt-20 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-6 lg:gap-24 items-start">
+          <div className="relative z-10 p-6 lg:p-14 pt-24">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 items-start">
               <div className="flex-shrink-0">
                 <Image
                   src={productDrRR}
@@ -56,6 +56,7 @@ export default function BestOverallSection() {
                   height={195}
                   className="w-48 h-48 mx-auto lg:mx-0 object-contain"
                   sizes="(max-width: 1024px) 12rem, 195px"
+                  priority
                 />
               </div>
 
@@ -76,15 +77,15 @@ export default function BestOverallSection() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 lg:gap-36">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 lg:gap-36">
                   <button 
                     type="button"
                     className="w-full sm:w-48 h-14 px-3 bg-blue-700 rounded-xl flex justify-center items-center text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
-                    Check availability
+                    <span>Check availability</span>
                   </button>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-3">
                     <span className="text-zinc-800 text-xl font-bold font-['Poppins']">
                       $23.99
                     </span>
@@ -166,10 +167,10 @@ export default function BestOverallSection() {
 
           <button 
             type="button" 
-            className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl flex justify-center items-center text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             aria-label="Check product availability"
           >
-            Check availability
+            <span>Check availability</span>
           </button>
         </div>
       </div>

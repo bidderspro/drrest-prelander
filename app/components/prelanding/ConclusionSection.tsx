@@ -36,14 +36,14 @@ export default function ConclusionSection() {
             
             {/* Top Pick Badge */}
             <div className="absolute top-0 left-0 z-10">
-              <div className="flex px-4 py-2 justify-center items-center gap-2 rounded-br-2xl bg-[#00C88F]">
+              <div className="flex px-4 py-2 justify-center items-center gap-2 bg-[#00C88F] rounded-br-2xl">
                 <span className="text-white text-xs sm:text-sm font-semibold font-['Poppins'] whitespace-nowrap">
                   Best Overall Mouth Tape
                 </span>
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-5 pt-10 pb-2 p-6 relative z-10">
+            <div className="flex flex-col items-center gap-5 p-6 pt-14 relative z-10">
               <div className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
                 <Image
                   src={productDrRR}
@@ -129,7 +129,7 @@ export default function ConclusionSection() {
                   </div>
                 </div>
                 
-                <div className="pt-20 pb-8 px-8 flex items-center justify-center">
+                <div className="pt-24 pb-8 px-8 flex items-center justify-center">
                   <div className="w-48 h-48 flex items-center justify-center">
                     <Image
                       src={productDrRR}
@@ -145,7 +145,7 @@ export default function ConclusionSection() {
               </div>
 
               {/* Right side with content */}
-              <div className="flex-1 p-8">
+              <div className="flex-1 p-8 pt-14">
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div className="space-y-4">
                     <div className="flex items-center gap-2">
@@ -159,7 +159,7 @@ export default function ConclusionSection() {
                       <span className="text-zinc-800 text-sm font-medium font-['Poppins']">4.9 Ratings</span>
                     </div>
                     
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <h3 className="text-xl font-bold font-['Poppins'] text-zinc-800">
                         Dr. RestRight Mouth Tape
                       </h3>
@@ -179,9 +179,9 @@ export default function ConclusionSection() {
                   <div className="flex items-center justify-between">
                     <button 
                       type="button" 
-                      className="w-48 h-12 px-4 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                      className="w-48 h-12 px-4 bg-blue-700 rounded-xl flex justify-center items-center text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     >
-                      Check availability
+                      <span>Check availability</span>
                     </button>
                     <div className="flex items-center gap-3">
                       <span className="text-zinc-800 text-lg font-bold font-['Poppins']">
