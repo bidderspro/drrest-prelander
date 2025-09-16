@@ -8,6 +8,8 @@ import ConclusionSection from "./components/prelanding/ConclusionSection";
 import AuthorBioSection from "./components/prelanding/AuthorBioSection";
 import Sidebar from "./components/prelanding/Sidebar";
 import FooterSection from "./components/prelanding/FooterSection";
+import RunnerUpSection from "./components/prelanding/RunnerUpSection";
+import ZZZTapeSection from "./components/prelanding/ZZZTapeSection";
 
 export default function PreLandingPage() {
   return (
@@ -27,6 +29,8 @@ export default function PreLandingPage() {
 
             <ProductComparisonSection />
             <BestOverallSection />
+            <RunnerUpSection />
+            <ZZZTapeSection />
 
             <ConclusionSection />
 

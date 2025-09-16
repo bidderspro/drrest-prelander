@@ -1,10 +1,6 @@
-import Link from 'next/link';
-import Prelanding from './prelanding/page';
+import React from 'react';
+import PreLandingPage from './prelanding';
 
-export default function Home() {
-  return (
-    <>
-      <Prelanding/>
-    </>
-  );
+export default function Page() {
+  return <PreLandingPage />;
 }

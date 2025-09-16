@@ -11,9 +11,9 @@ export default function HowWeTestedSection() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-          <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+          <div className="bg-blue-100 rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Image
                   src={verifiedIcon}
                   alt="verified"
@@ -24,12 +24,12 @@ export default function HowWeTestedSection() {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                <h3 className="text-base sm:text-lg font-semibold font-['Poppins'] text-zinc-800">
                   Adhesive Strength (The All-Night Challenge)
                 </h3>
               </div>
             </div>
-            <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+            <p className="text-sm sm:text-base font-normal font-['Poppins'] text-zinc-600 leading-relaxed">
               We tested each tape over multiple nights — side sleepers,
               restless movers, even sweaty conditions. If it peeled off
               or curled by 2am, it failed. Because if a tape can't last
@@ -37,9 +37,9 @@ export default function HowWeTestedSection() {
             </p>
           </div>
 
-          <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+          <div className="bg-blue-100 rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Image
                   src={verifiedIcon}
                   alt="verified"
@@ -50,12 +50,12 @@ export default function HowWeTestedSection() {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                <h3 className="text-base sm:text-lg font-semibold font-['Poppins'] text-zinc-800">
                   Comfort & Removal (Morning After Test)
                 </h3>
               </div>
             </div>
-            <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+            <p className="text-sm sm:text-base font-normal font-['Poppins'] text-zinc-600 leading-relaxed">
               No one wants a sore, red mark where tape used to be. We
               checked for irritation and residue, especially on 45+
               skin. If a tape punishes you in the morning, it doesn't
@@ -63,9 +63,9 @@ export default function HowWeTestedSection() {
             </p>
           </div>
 
-          <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+          <div className="bg-blue-100 rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Image
                   src={verifiedIcon}
                   alt="verified"
@@ -76,12 +76,12 @@ export default function HowWeTestedSection() {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                <h3 className="text-base sm:text-lg font-semibold font-['Poppins'] text-zinc-800">
                   Safety & Peace of Mind (Emergency Readiness)
                 </h3>
               </div>
             </div>
-            <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+            <p className="text-sm sm:text-base font-normal font-['Poppins'] text-zinc-600 leading-relaxed">
               We mimicked "real-life moments" coughing, sneezing,
               sipping water. The best tapes stayed put when needed, but
               peeled off instantly if something went wrong. If you can't
@@ -89,9 +89,9 @@ export default function HowWeTestedSection() {
             </p>
           </div>
 
-          <div className="bg-blue-100 rounded-2xl p-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center">
+          <div className="bg-blue-100 rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 p-3 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Image
                   src={verifiedIcon}
                   alt="verified"
@@ -102,12 +102,12 @@ export default function HowWeTestedSection() {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-semibold font-['Poppins'] text-zinc-800">
+                <h3 className="text-base sm:text-lg font-semibold font-['Poppins'] text-zinc-800">
                   Sleep Results (The Real Measure)
                 </h3>
               </div>
             </div>
-            <p className="text-sm font-normal font-['Poppins'] text-zinc-600">
+            <p className="text-sm sm:text-base font-normal font-['Poppins'] text-zinc-600 leading-relaxed">
               The ultimate test: did people feel better? We tracked
               snoring, interruptions, and oxygen with apps and
               wearables. Then we asked the only question that matters:

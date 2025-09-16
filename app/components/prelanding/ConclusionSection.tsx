@@ -10,57 +10,51 @@ export default function ConclusionSection() {
           Conclusion
         </h2>
 
-        {/* Mobile card – matches reference layout */}
+        {/* Mobile card – improved layout */}
         <div className="lg:hidden">
-          <div className="relative rounded-2xl overflow-hidden p-5" role="group" aria-label="Best Overall Mouth Tape">
-            {/* Responsive mobile SVG background */}
-            <div className="absolute inset-0 w-full h-full">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                viewBox="0 0 370 670"
-                fill="none"
-                className="w-full h-full"
-                preserveAspectRatio="none"
-              >
-                <g filter="url(#filter0_d_12_233)">
-                  <path d="M344 10C352.837 10 360 17.1634 360 26V644C360 652.837 352.837 660 344 660H26C17.1634 660 10 652.837 10 644V83.8892C10 76.4461 18.5568 71.417 26 71.417H187C204.673 71.417 219 57.0899 219 39.417V24.7598C219 17.774 223.752 10 230.738 10H344Z" fill="white" />
+          <div className="relative bg-white rounded-2xl overflow-hidden shadow-md" role="group" aria-label="Best Overall Mouth Tape">
+            {/* Custom background shape with shadow */}
+            <div className="absolute inset-0">
+              <svg width="100%" height="100%" viewBox="0 0 909 391" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_101_529)">
+                  <path d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107V107H278C307.823 107 332 82.8234 332 53C332 52.0233 331.974 51.0527 331.923 50.0887C331.217 36.8145 340.047 20 353.34 20H865Z" fill="white"/>
                 </g>
                 <defs>
-                  <filter id="filter0_d_12_233" x="0" y="0" width="370" height="670" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                    <feOffset />
-                    <feGaussianBlur stdDeviation="5" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.4 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_233" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_233" result="shape" />
+                  <filter id="filter0_d_101_529" x="0" y="0" width="909" height="391" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_529"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_529" result="shape"/>
                   </filter>
                 </defs>
               </svg>
             </div>
-
-            <div className="absolute top-0 left-0">
-              <div className="flex px-4 py-2 sm:px-[23px] sm:py-[13px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[32px] bg-[#00C88F]">
+            
+            {/* Top Pick Badge */}
+            <div className="absolute top-0 left-0 z-10">
+              <div className="flex px-4 py-2 justify-center items-center gap-2 rounded-br-2xl bg-[#00C88F]">
                 <span className="text-white text-xs sm:text-sm font-semibold font-['Poppins'] whitespace-nowrap">
                   Best Overall Mouth Tape
                 </span>
               </div>
             </div>
 
-            
-
-            <div className="relative z-10 flex flex-col items-center gap-5 pt-16 pb-2">
-              <Image
-                src={productDrRR}
-                alt="Dr. RestRight Mouth Tape"
-                width={195}
-                height={195}
-                className="w-32 h-auto sm:w-36 sm:h-auto md:w-40 md:h-auto lg:w-48 lg:h-auto"
-                sizes="(max-width: 640px) 8rem, (max-width: 768px) 9rem, (max-width: 1024px) 10rem, 195px"
-              />
+            <div className="flex flex-col items-center gap-5 pt-10 pb-2 p-6 relative z-10">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
+                <Image
+                  src={productDrRR}
+                  alt="Dr. RestRight Mouth Tape"
+                  width={160}
+                  height={160}
+                  className="w-full h-full object-contain"
+                  sizes="(max-width: 640px) 128px, 160px"
+                  priority
+                />
+              </div>
 
               <div className="w-full flex flex-col gap-4">
                 <div className="flex items-center gap-2 justify-center">
@@ -71,22 +65,27 @@ export default function ConclusionSection() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-neutral-800 text-[10px] font-medium font-['Poppins']">4.9 Ratings</span>
+                  <span className="text-neutral-800 text-xs font-medium font-['Poppins']">4.9 Ratings</span>
                 </div>
 
-                <div className="text-zinc-800 text-sm font-bold font-['Poppins']">
-                  Dr. RestRight Mouth Tape
+                <div className="text-center">
+                  <h3 className="text-zinc-800 text-sm sm:text-base font-bold font-['Poppins'] mb-2">
+                    Dr. RestRight Mouth Tape
+                  </h3>
+                  <p className="text-zinc-800 text-xs sm:text-sm font-normal font-['Poppins'] leading-relaxed">
+                    Dr. RestRight isn't just another sleep tape — it's the only one proven to silence snoring, stop dry mouth, and still let you breathe easy if congestion strikes. That balance of comfort, safety, and doctor-formulated design is why it outperformed every other brand we tested.
+                  </p>
                 </div>
-                <p className="text-zinc-800 text-xs font-normal font-['Poppins'] leading-relaxed">
-                  Dr. RestRight isn't just another sleep tape — it's the only one proven to silence snoring, stop dry mouth, and still let you breathe easy if congestion strikes. That balance of comfort, safety, and doctor-formulated design is why it outperformed every other brand we tested — and why it's the clear choice for 45+ sleepers who refuse to gamble with their rest.
-                </p>
 
-                <div className="flex w-full items-center justify-between pt-3">
-                  <button type="button" className="w-40 h-10 px-4 bg-blue-700 rounded-xl text-white text-xs font-medium font-['Poppins'] whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                <div className="flex flex-col sm:flex-row w-full items-center justify-between gap-4 pt-3">
+                  <button 
+                    type="button" 
+                    className="w-full sm:w-auto sm:flex-1 h-10 px-4 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] whitespace-nowrap hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  >
                     Check availability
                   </button>
                   <div className="flex items-center gap-2">
-                    <span className="text-zinc-800 text-sm font-bold font-['Poppins']">$23.99</span>
+                    <span className="text-zinc-800 text-sm sm:text-base font-bold font-['Poppins']">$23.99</span>
                     <span className="text-zinc-800 text-xs font-medium font-['Poppins'] line-through">$29.99</span>
                   </div>
                 </div>
@@ -95,77 +94,76 @@ export default function ConclusionSection() {
           </div>
         </div>
 
-        {/* Desktop/large screens card – preserve original overlay design */}
+        {/* Desktop/large screens card – improved layout */}
         <div className="hidden lg:block">
-          <div className="relative">
-            <div
-              className="relative w-full max-w-[869px] h-[351px] overflow-hidden"
-            >
-              <div className="absolute inset-0 w-full h-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 909 391"
-                  fill="none"
-                  className="w-full h-full"
-                  preserveAspectRatio="none"
-                >
-                  <g filter="url(#filter0_d_12_524)">
-                    <path d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107H278C307.823 107 332 82.8234 332 53C332 52.0233 331.974 51.0527 331.923 50.0887C331.217 36.8145 340.047 20 353.34 20H865Z" fill="white" />
-                  </g>
-                  <defs>
-                    <filter id="filter0_d_12_524" x="0" y="0" width="909" height="391" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                      <feOffset />
-                      <feGaussianBlur stdDeviation="10" />
-                      <feComposite in2="hardAlpha" operator="out" />
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0" />
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12_524" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12_524" result="shape" />
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-
-              <div className="absolute left-6 top-6 z-20">
-                <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify-center items-center">
-                  <span className="text-white text-base font-semibold font-['Poppins']">
-                    Best Overall Mouth Tape
-                  </span>
+          <div className="relative bg-white rounded-2xl overflow-hidden">
+            {/* Custom background shape with shadow */}
+            <div className="absolute inset-0">
+              <svg width="100%" height="100%" viewBox="0 0 909 391" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_101_529)">
+                  <path d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107V107H278C307.823 107 332 82.8234 332 53C332 52.0233 331.974 51.0527 331.923 50.0887C331.217 36.8145 340.047 20 353.34 20H865Z" fill="white"/>
+                </g>
+                <defs>
+                  <filter id="filter0_d_101_529" x="0" y="0" width="909" height="391" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_529"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_529" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+            
+            <div className="flex relative z-10">
+              {/* Left side with badge */}
+              <div className="relative">
+                <div className="absolute top-6 left-6 z-10">
+                  <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify-center items-center">
+                    <span className="text-white text-base font-semibold font-['Poppins']">
+                      Best Overall Mouth Tape
+                    </span>
+                  </div>
                 </div>
-              </div>
-
-              <div className="absolute inset-0 z-10 px-14 py-9 flex items-end overflow-hidden">
-                <div className="flex items-end gap-16 w-full max-w-full">
-                  <div className="flex-shrink-0">
+                
+                <div className="pt-20 pb-8 px-8 flex items-center justify-center">
+                  <div className="w-48 h-48 flex items-center justify-center">
                     <Image
                       src={productDrRR}
                       alt="Dr. RestRight Mouth Tape"
                       width={195}
                       height={195}
-                      className="w-[195px] h-[195px]"
-                      sizes="(max-width: 1024px) 40vw, 195px"
-                      style={{ aspectRatio: "1/1" }}
+                      className="w-full h-full object-contain"
+                      sizes="192px"
+                      priority
                     />
                   </div>
+                </div>
+              </div>
 
-                  <div
-                    className="flex flex-col items-start gap-6"
-                    style={{ width: "482px", height: "286px" }}
-                  >
-                    <div className="flex flex-col gap-2">
-                      <h3
-                        className="text-zinc-800 font-bold font-['Poppins'] truncate"
-                        style={{ fontSize: "18px" }}
-                      >
+              {/* Right side with content */}
+              <div className="flex-1 p-8">
+                <div className="flex flex-col h-full justify-between gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2">
+                      <div className="flex">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} className="w-5 h-5" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                          </svg>
+                        ))}
+                      </div>
+                      <span className="text-zinc-800 text-sm font-medium font-['Poppins']">4.9 Ratings</span>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold font-['Poppins'] text-zinc-800">
                         Dr. RestRight Mouth Tape
                       </h3>
-                      <p
-                        className="text-zinc-800 font-normal font-['Poppins'] leading-relaxed"
-                        style={{ fontSize: "16px" }}
-                      >
+                      <p className="text-zinc-800 text-base font-normal font-['Poppins'] leading-relaxed">
                         Dr. RestRight isn't just another sleep tape — it's
                         the only one proven to silence snoring, stop dry
                         mouth, and still let you breathe easy if
@@ -176,21 +174,22 @@ export default function ConclusionSection() {
                         real, reliable rest.
                       </p>
                     </div>
+                  </div>
 
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                      <button type="button" className="w-44 h-12 px-3 py-2 bg-blue-700 rounded-xl flex justify-center items-center flex-shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                        <span className="text-white text-sm font-medium font-['Poppins']">
-                          Check availability
-                        </span>
-                      </button>
-                      <div className="flex items-center gap-2 flex-shrink-0">
-                        <span className="text-zinc-800 text-lg font-bold font-['Poppins']">
-                          $23.99
-                        </span>
-                        <span className="text-zinc-800 text-base font-medium font-['Poppins'] line-through">
-                          $29.99
-                        </span>
-                      </div>
+                  <div className="flex items-center justify-between">
+                    <button 
+                      type="button" 
+                      className="w-48 h-12 px-4 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    >
+                      Check availability
+                    </button>
+                    <div className="flex items-center gap-3">
+                      <span className="text-zinc-800 text-lg font-bold font-['Poppins']">
+                        $23.99
+                      </span>
+                      <span className="text-zinc-800 text-base font-medium font-['Poppins'] line-through">
+                        $29.99
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -245,5 +244,3 @@ export default function ConclusionSection() {
     </section>
   );
 }
-
-

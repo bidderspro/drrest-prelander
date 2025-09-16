@@ -1,11 +1,6 @@
-import { Metadata } from 'next';
-import PreLandingPage from '../prelanding';
+import { redirect } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: 'Dr. RestRight - Better Sleep. Healthier Life.',
-  description: 'Discover Dr. RestRight\'s proven solution for restful nights and better sleep quality.',
-};
-
-export default function PreLanding() {
-  return <PreLandingPage />;
+export default function PrelandingPage() {
+  // Redirect to the main prelanding page
+  redirect('/');
 }

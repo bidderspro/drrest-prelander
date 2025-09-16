@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
-import comparisonImg from "@images/Dr-RR-Tape-comparison.svg";
+import comparisonImg from "@images/mouth-tape-comparision.svg";
 
 export default function BestOverallSection() {
   return (
@@ -15,27 +15,51 @@ export default function BestOverallSection() {
           </span>
         </h2>
 
-        <div className="bg-white rounded-2xl p-6 lg:p-8 relative overflow-hidden">
-          <div className="absolute top-6 left-6 bg-emerald-500 rounded-full px-6 py-3">
-            <span className="text-white text-base font-semibold font-['Poppins']">
-              Best Overall Mouth Tape
-            </span>
+        <div className="bg-white rounded-2xl relative overflow-hidden">
+          {/* Custom background shape with shadow */}
+          <div className="absolute inset-0">
+            <svg width="100%" height="100%" viewBox="0 0 909 391" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_101_529)">
+                <path d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107V107H278C307.823 107 332 82.8234 332 53C332 52.0233 331.974 51.0527 331.923 50.0887C331.217 36.8145 340.047 20 353.34 20H865Z" fill="white"/>
+              </g>
+              <defs>
+                <filter id="filter0_d_101_529" x="0" y="0" width="909" height="391" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset/>
+                  <feGaussianBlur stdDeviation="10"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_529"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_529" result="shape"/>
+                </filter>
+              </defs>
+            </svg>
           </div>
 
-          <div className="pt-16 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          {/* Badge */}
+          <div className="absolute top-6 left-6 z-10">
+            <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify-center items-center">
+              <span className="text-white text-base font-semibold font-['Poppins']">
+                Best Overall Mouth Tape
+              </span>
+            </div>
+          </div>
+
+          <div className="relative z-10 p-6 lg:p-14 pt-20 lg:pt-20">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-24 items-start">
               <div className="flex-shrink-0">
                 <Image
                   src={productDrRR}
                   alt="Dr. RestRight Mouth Tape"
                   width={195}
                   height={195}
-                  className="w-48 h-48 mx-auto lg:mx-0"
+                  className="w-48 h-48 mx-auto lg:mx-0 object-contain"
                   sizes="(max-width: 1024px) 12rem, 195px"
                 />
               </div>
 
-              <div className="flex-1 space-y-6">
+              <div className="flex-1 space-y-6 max-w-[482px]">
                 <div className="space-y-3">
                   <h3 className="text-lg font-bold font-['Poppins'] text-zinc-800">
                     Dr. RestRight Mouth Tape
@@ -52,8 +76,12 @@ export default function BestOverallSection() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                  <button className="w-full sm:w-52 h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 lg:gap-36">
+                  <button 
+                    type="button"
+                    className="w-full sm:w-48 h-14 px-3 bg-blue-700 rounded-xl flex justify-center items-center text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    aria-label="Check product availability"
+                  >
                     Check availability
                   </button>
                   <div className="flex items-center gap-2">
@@ -136,7 +164,11 @@ export default function BestOverallSection() {
             </p>
           </div>
 
-          <button type="button" className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+          <button 
+            type="button" 
+            className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            aria-label="Check product availability"
+          >
             Check availability
           </button>
         </div>
@@ -144,5 +176,3 @@ export default function BestOverallSection() {
     </section>
   );
 }
-
-
