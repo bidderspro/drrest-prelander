@@ -32,19 +32,20 @@ export default function ProductCard(props: ProductCardProps) {
       {/* Mobile variant */}
       <div className="lg:hidden">
          <div 
-            className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] flex flex-row overflow-hidden"
+            className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] relative"
             style={{ 
               minHeight: '360px',
-              maxWidth: '450px',
+              maxWidth: '100%',
+              width: '450px',
               margin: '0 auto'
             }}>
           {isBestOverall && (
-            <div className="w-8 bg-[#3bf683] flex items-center justify-center">
-              <div className="transform -rotate-90 text-white text-xs font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#00C88F] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full z-10 shadow-md">
+              <p className="text-white text-[10px] sm:text-xs font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</p>
             </div>
           )}
 
-          <div className="w-full flex flex-col gap-4 px-4 pt-6 pb-6">
+          <div className="w-full flex flex-col gap-4 px-3 sm:px-4 pt-7 sm:pt-8 pb-5 sm:pb-6">
             <div className="flex justify-center items-center h-36">
               <Image 
                 src={image} 
@@ -73,13 +74,13 @@ export default function ProductCard(props: ProductCardProps) {
               
               <div className="space-y-1">
                 <h4 className="text-sm font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
-                <ul className="text-xs font-normal font-['Poppins'] text-[#334155] space-y-1.5 list-disc pl-4">
+                <div className="text-xs font-normal font-['Poppins'] text-[#334155] space-y-1.5">
                   {descriptionLines.map((line, idx) => (
-                    <li key={idx} className="leading-relaxed">
+                    <p key={idx} className="leading-relaxed">
                       {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
-                    </li>
+                    </p>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
 
@@ -109,20 +110,23 @@ export default function ProductCard(props: ProductCardProps) {
             display: 'flex',
             width: '100%',
             maxWidth: '800px',
-            height: '340px',
+            height: 'auto',
+            minHeight: '340px',
             alignItems: 'center',
             gap: '0',
             margin: '0 auto'
           }}>
           {isBestOverall && (
-            <div className="w-12 bg-[#3bf683] rounded-tl-2xl rounded-bl-2xl flex items-center justify-center h-full flex-shrink-0">
-              <div className="transform -rotate-90 text-white text-base font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</div>
+            <div className="w-14 h-[470px] bg-[#00C88F] rounded-tl-2xl rounded-bl-2xl flex items-center justify-center  flex-shrink-0">
+              <div className=" flex items-center justify-center">
+                <p className="text-white text-base font-semibold font-['Poppins'] whitespace-nowrap origin-center -rotate-90">Best Overall</p>
+              </div>
             </div>
           )}
 
           <div className={`flex-1 ${isBestOverall ? "p-6 lg:p-8" : ""}`}>
-            <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-full">
-              <div className="flex-shrink-0 lg:w-56 flex flex-col items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-full justify-center items-center">
+              <div className="flex-shrink-0 lg:w-56 flex flex-col items-center lg:items-center">
                 <div className="w-48 h-48 flex items-center justify-center mb-4">
                   <Image 
                     src={image} 
