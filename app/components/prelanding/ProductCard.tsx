@@ -40,7 +40,7 @@ export default function ProductCard(props: ProductCardProps) {
               margin: '0 auto'
             }}>
           {isBestOverall && (
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#00C88F] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full z-10 shadow-md">
+            <div className="w-full bg-[#00C88F] flex justify-center items-center gap-2.5  h-[58px] px-[132px] py-[18px] z-10 shadow-md rounded-t-2xl">
               <p className="text-white text-[10px] sm:text-xs font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</p>
             </div>
           )}
