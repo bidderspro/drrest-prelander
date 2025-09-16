@@ -74,13 +74,13 @@ export default function ProductCard(props: ProductCardProps) {
               
               <div className="space-y-1">
                 <h4 className="text-sm font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
-                <div className="text-xs font-normal font-['Poppins'] text-[#334155] space-y-1.5">
+                <ul className="text-xs font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-4">
                   {descriptionLines.map((line, idx) => (
-                    <p key={idx} className="leading-relaxed">
+                    <li key={idx} className="leading-relaxed">
                       {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
-                    </p>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
 
@@ -156,13 +156,13 @@ export default function ProductCard(props: ProductCardProps) {
                   
                   <div className="space-y-1">
                     <h4 className="text-base font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
-                    <div className="text-sm font-normal font-['Poppins'] text-[#334155] space-y-2">
+                    <ul className="text-sm font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-5">
                       {descriptionLines.map((line, idx) => (
-                        <p key={idx} className="leading-relaxed">
+                        <li key={idx} className="leading-relaxed">
                           {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
-                        </p>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
                 </div>
 
