@@ -20,6 +20,7 @@ export default function HowWeTestedSection() {
                   width={24}
                   height={24}
                   className="w-6 h-6"
+                  sizes="24px"
                 />
               </div>
               <div className="flex-1">
@@ -45,6 +46,7 @@ export default function HowWeTestedSection() {
                   width={24}
                   height={24}
                   className="w-6 h-6"
+                  sizes="24px"
                 />
               </div>
               <div className="flex-1">
@@ -70,6 +72,7 @@ export default function HowWeTestedSection() {
                   width={24}
                   height={24}
                   className="w-6 h-6"
+                  sizes="24px"
                 />
               </div>
               <div className="flex-1">
@@ -95,6 +98,7 @@ export default function HowWeTestedSection() {
                   width={24}
                   height={24}
                   className="w-6 h-6"
+                  sizes="24px"
                 />
               </div>
               <div className="flex-1">

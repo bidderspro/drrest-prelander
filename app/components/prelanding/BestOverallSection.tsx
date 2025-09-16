@@ -31,6 +31,7 @@ export default function BestOverallSection() {
                   width={195}
                   height={195}
                   className="w-48 h-48 mx-auto lg:mx-0"
+                  sizes="(max-width: 1024px) 12rem, 195px"
                 />
               </div>
 
@@ -78,6 +79,7 @@ export default function BestOverallSection() {
             width={922}
             height={443}
             className="w-full h-auto rounded-2xl"
+            sizes="(max-width: 1024px) 100vw, 922px"
           />
         </div>
 
@@ -134,7 +136,7 @@ export default function BestOverallSection() {
             </p>
           </div>
 
-          <button className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors">
+          <button type="button" className="w-full h-14 px-6 py-3 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
             Check availability
           </button>
         </div>

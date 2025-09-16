@@ -6,8 +6,8 @@ import ProductCard from "./ProductCard";
 
 export default function ProductComparisonSection() {
   return (
-    <section className="py-8 lg:py-12"> 
-      <h2 className="text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[48px] text-zinc-800 mb-8 lg:mb-10">
+    <section className="py-8 lg:py-12">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-['Poppins'] leading-snug sm:leading-[44px] lg:leading-[48px] text-zinc-800 mb-4 sm:mb-8 lg:mb-10">
         The Results: Our Top 3 Picks
       </h2>
 

@@ -1,10 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 
 export default function Sidebar() {
   return (
-    <aside className="w-full sm:w-[22rem] lg:w-80 xl:w-96 flex-shrink-0">
+    <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] flex-shrink-0">
       <div className="sticky top-6 sm:top-8">
         <div className="relative">
           <svg
@@ -63,7 +62,7 @@ export default function Sidebar() {
             </defs>
           </svg>
 
-          <div className="absolute left-2.5 top-2.5 flex justify-center items-center w-[180px] h-[53px] px-[23px] py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
+          <div className="absolute left-2.5 top-2.5 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
             <div className="flex items-center gap-2">
               <svg
                 width="28"
@@ -106,37 +105,39 @@ export default function Sidebar() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="text-white text-sm sm:text-base md:text-lg font-semibold font-['Poppins'] whitespace-nowrap">
+              <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-['Poppins'] whitespace-nowrap">
                 Top Pick
               </span>
             </div>
           </div>
 
-          <div className="absolute inset-0 px-4 py-4 sm:px-5 sm:py-5 flex flex-col justify-end items-center">
-            <div className="w-full sm:w-80 space-y-6 sm:space-y-9">
-              <div className="text-center">
-                <Image
-                  src={productDrRR}
-                  alt="Dr. RestRight Mouth Tape"
-                  width={203}
-                  height={203}
-                  className="w-36 h-36 sm:w-52 sm:h-52 mx-auto"
-                />
-              </div>
-
-              <div className="space-y-3 sm:space-y-4">
-                <div className="space-y-3 sm:space-y-3">
-                  <h3 className="text-sm sm:text-base font-bold font-['Poppins'] text-zinc-800 text-left">
-                    Dr. RestRight Mouth Tape
-                  </h3>
-                  <p className="text-xs sm:text-sm font-normal font-['Poppins'] text-zinc-800 text-left">
-                    After comparing nearly a dozen brands, this was the
-                    one that actually worked — safe, effective, and
-                    comfortable every night.
-                  </p>
+          <div className="absolute inset-0 p-4 sm:p-5 flex flex-col">
+            <div className="flex-1 flex flex-col">
+              <div className="flex-1 flex flex-col justify-center items-center">
+                <div className="flex flex-row justify-center items-center gap-2 mb-4">
+                  <Image
+                    src={productDrRR}
+                    alt="Dr. RestRight Mouth Tape"
+                    width={120}
+                    height={120}
+                    className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
+                    sizes="(max-width: 640px) 6rem, (max-width: 768px) 8rem, 9rem"
+                    priority
+                  />
                 </div>
-
-                <button className="w-full h-12 sm:h-14 px-3 py-2 bg-blue-700 rounded-xl text-white text-sm sm:text-base font-['Poppins'] hover:bg-blue-800 transition-colors">
+              </div>
+              
+              <div className="mt-2 sm:mt-4">
+                <h3 className="text-sm sm:text-base font-bold font-['Poppins'] text-zinc-800 mb-2">
+                  Dr. RestRight Mouth Tape
+                </h3>
+                <p className="text-xs sm:text-sm font-normal font-['Poppins'] text-zinc-800 leading-relaxed mb-4">
+                  After comparing nearly a dozen brands, this was the
+                  one that actually worked — safe, effective, and
+                  comfortable every night.
+                </p>
+                
+                <button type="button" className="w-full h-10 sm:h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                   GET 20% OFF
                 </button>
               </div>
@@ -147,5 +148,3 @@ export default function Sidebar() {
     </aside>
   );
 }
-
-

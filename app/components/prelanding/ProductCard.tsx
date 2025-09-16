@@ -31,7 +31,7 @@ export default function ProductCard(props: ProductCardProps) {
     <div className="space-y-6">
       {/* Mobile variant */}
       <div className="lg:hidden">
-        <div className="w-full max-w-[360px] bg-white rounded-2xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] flex flex-col items-stretch">
+        <div className="w-full bg-white rounded-2xl shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] flex flex-col items-stretch">
           {isBestOverall && (
             <div className="w-full h-14 px-4 bg-emerald-500 rounded-tl-2xl rounded-tr-2xl inline-flex justify-center items-center">
               <div className="text-white text-sm font-semibold font-['Poppins']">Best Overall</div>
@@ -39,7 +39,7 @@ export default function ProductCard(props: ProductCardProps) {
           )}
 
           <div className="w-full flex flex-col gap-6 px-4 pt-6 pb-4">
-            <Image src={image} alt={alt} width={259} height={259} className="w-64 h-64 mx-auto" />
+            <Image src={image} alt={alt} width={259} height={259} className="w-40 sm:w-56 md:w-64 h-auto mx-auto" sizes="(max-width: 640px) 10rem, (max-width: 768px) 14rem, (max-width: 1024px) 16rem, 259px" />
 
             <div className="self-stretch flex flex-col gap-6">
               <div className="self-stretch flex flex-col gap-4">
@@ -73,11 +73,11 @@ export default function ProductCard(props: ProductCardProps) {
                 </div>
               </div>
 
-              <div className="self-stretch inline-flex justify-between items-center">
-                <button className="w-44 h-12 px-4 bg-blue-700 rounded-xl flex justify-center items-center whitespace-nowrap">
+              <div className="self-stretch flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                <button type="button" className="w-full sm:w-44 h-12 px-4 bg-blue-700 rounded-xl flex justify-center items-center whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                   <div className="text-white text-xs font-medium font-['Poppins']">{ctaLabel}</div>
                 </button>
-                <div className="w-36 flex justify-end items-center gap-2">
+                <div className="w-full sm:w-auto flex justify-end sm:justify-start items-center gap-2">
                   <div className="text-zinc-800 text-sm font-bold font-['Poppins']">{price}</div>
                   {oldPrice && (
                     <div className="text-zinc-800 text-xs font-medium font-['Poppins'] line-through">{oldPrice}</div>
@@ -102,7 +102,7 @@ export default function ProductCard(props: ProductCardProps) {
             <div className={`flex-1 ${isBestOverall ? "p-6 lg:p-8" : ""}`}>
               <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-full">
                 <div className="flex-shrink-0 lg:w-56">
-                  <Image src={image} alt={alt} width={224} height={224} className="w-full h-auto max-w-56 mx-auto lg:mx-0 mb-4" />
+                  <Image src={image} alt={alt} width={224} height={224} className="w-full h-auto max-w-56 mx-auto lg:mx-0 mb-4" sizes="(max-width: 1024px) 14rem, 224px" />
                   <div className="flex items-center gap-2 justify-center lg:justify-start">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
@@ -139,7 +139,7 @@ export default function ProductCard(props: ProductCardProps) {
                   </div>
 
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <button className="w-full sm:w-52 h-14 px-6 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors whitespace-nowrap">
+                    <button type="button" className="w-full sm:w-52 h-14 px-6 bg-blue-700 rounded-xl text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                       {ctaLabel}
                     </button>
                     <div className="flex items-center gap-3">

@@ -20,7 +20,7 @@ export default function PreLandingPage() {
         {/* Main Content and Sidebar Container */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Main Content */}
-          <main className="flex-1 lg:max-w-4xl">
+          <main className="flex-1 lg:max-w-4xl xl:max-w-5xl">
             <HeroSection />
 
             <HowWeTestedSection />

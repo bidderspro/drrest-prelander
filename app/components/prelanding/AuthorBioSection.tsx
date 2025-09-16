@@ -14,6 +14,7 @@ export default function AuthorBioSection() {
               width={84}
               height={84}
               className="w-20 h-20 rounded-xl"
+              sizes="80px"
             />
           </div>
           <div className="flex-1 space-y-4">

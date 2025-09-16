@@ -5,14 +5,14 @@ import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 export default function ConclusionSection() {
   return (
     <section className="py-8 lg:py-12">
-      <div className="max-w-4xl flex flex-col gap-6">
+      <div className="max-w-4xl mx-auto flex flex-col gap-6">
         <h2 className="text-zinc-800 text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[48px]">
           Conclusion
         </h2>
 
         {/* Mobile card – matches reference layout */}
         <div className="lg:hidden">
-          <div className="relative rounded-2xl overflow-hidden p-5">
+          <div className="relative rounded-2xl overflow-hidden p-5" role="group" aria-label="Best Overall Mouth Tape">
             {/* Responsive mobile SVG background */}
             <div className="absolute inset-0 w-full h-full">
               <svg
@@ -43,7 +43,7 @@ export default function ConclusionSection() {
             </div>
 
             <div className="absolute top-0 left-0">
-              <div className="flex w-[195px] h-[45px] py-[13px] px-[23px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[32px] bg-[#00C88F]">
+              <div className="flex px-4 py-2 sm:px-[23px] sm:py-[13px] justify-center items-center gap-[10px] flex-shrink-0 rounded-[32px] bg-[#00C88F]">
                 <span className="text-white text-xs sm:text-sm font-semibold font-['Poppins'] whitespace-nowrap">
                   Best Overall Mouth Tape
                 </span>
@@ -59,6 +59,7 @@ export default function ConclusionSection() {
                 width={195}
                 height={195}
                 className="w-32 h-auto sm:w-36 sm:h-auto md:w-40 md:h-auto lg:w-48 lg:h-auto"
+                sizes="(max-width: 640px) 8rem, (max-width: 768px) 9rem, (max-width: 1024px) 10rem, 195px"
               />
 
               <div className="w-full flex flex-col gap-4">
@@ -81,7 +82,7 @@ export default function ConclusionSection() {
                 </p>
 
                 <div className="flex w-full items-center justify-between pt-3">
-                  <button className="w-40 h-10 px-4 bg-blue-700 rounded-xl text-white text-xs font-medium font-['Poppins'] whitespace-nowrap">
+                  <button type="button" className="w-40 h-10 px-4 bg-blue-700 rounded-xl text-white text-xs font-medium font-['Poppins'] whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                     Check availability
                   </button>
                   <div className="flex items-center gap-2">
@@ -129,14 +130,14 @@ export default function ConclusionSection() {
               </div>
 
               <div className="absolute left-6 top-6 z-20">
-                <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify.center items-center">
+                <div className="px-6 py-3 bg-emerald-500 rounded-[32px] inline-flex justify-center items-center">
                   <span className="text-white text-base font-semibold font-['Poppins']">
                     Best Overall Mouth Tape
                   </span>
                 </div>
               </div>
 
-              <div className="absolute inset-0 z-10 px-14 py-9 flex items.end overflow-hidden">
+              <div className="absolute inset-0 z-10 px-14 py-9 flex items-end overflow-hidden">
                 <div className="flex items-end gap-16 w-full max-w-full">
                   <div className="flex-shrink-0">
                     <Image
@@ -145,6 +146,7 @@ export default function ConclusionSection() {
                       width={195}
                       height={195}
                       className="w-[195px] h-[195px]"
+                      sizes="(max-width: 1024px) 40vw, 195px"
                       style={{ aspectRatio: "1/1" }}
                     />
                   </div>
@@ -176,7 +178,7 @@ export default function ConclusionSection() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                      <button className="w-44 h-12 px-3 py-2 bg-blue-700 rounded-xl flex justify-center items-center flex-shrink-0">
+                      <button type="button" className="w-44 h-12 px-3 py-2 bg-blue-700 rounded-xl flex justify-center items-center flex-shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
                         <span className="text-white text-sm font-medium font-['Poppins']">
                           Check availability
                         </span>

@@ -19,6 +19,7 @@ export default function HeroSection() {
               width={64}
               height={64}
               className="w-16 h-16 rounded-full"
+              sizes="64px"
             />
             <div className="text-[#333333] text-lg font-bold font-['Poppins']">
               By Dr. Stephen T
@@ -45,6 +46,8 @@ export default function HeroSection() {
             width={922}
             height={561}
             className="w-full h-auto rounded-2xl"
+            sizes="(max-width: 1024px) 100vw, 922px"
+            priority
           />
         </div>
       </div>

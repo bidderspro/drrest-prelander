@@ -5,9 +5,9 @@ export default function FooterSection() {
         <div className="text-neutral-500 text-base font-normal font-['Poppins']">
           @2025 Verified Buyers Guide
         </div>
-        <div className="text-neutral-500 text-base font-normal font-['Poppins'] underline cursor-pointer hover:text-neutral-600 transition-colors">
+        <a href="#privacy" className="text-neutral-500 text-base font-normal font-['Poppins'] underline hover:text-neutral-600 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
           Privacy Policy
-        </div>
+        </a>
       </div>
     </footer>
   );
