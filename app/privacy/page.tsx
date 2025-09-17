@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PrelandingHeader from '@/app/components/prelanding/PrelandingHeader';
+import BackButton from '@/app/components/BackButton';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Verified Buyers Guide',
@@ -13,6 +14,9 @@ export default function PrivacyPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <PrelandingHeader />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-3 sm:mt-4">
+        <BackButton label="Back" />
+      </div>
 
       {/* Content */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
