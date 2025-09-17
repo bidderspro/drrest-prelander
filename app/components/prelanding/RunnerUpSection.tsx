@@ -13,9 +13,9 @@ export default function RunnerUpSection() {
           </span>
         </h2>
 
-        <div className="rounded-2xl relative overflow-hidden min-h-[500px] sm:min-h-[450px] md:min-h-[400px]">
+        <div className="relative overflow-hidden rounded-2xl">
           {/* Custom background shape with shadow */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="hidden md:block"
@@ -91,29 +91,29 @@ export default function RunnerUpSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-2 left-0 sm:top-0 sm:left-2 md:top-0 md:left- 2 lg:top-6 lg:left-0 z-10">
-            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[224px] md:h-[65px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#5ECBE4]">
+          <div className="absolute top-2 left-0 sm:top-4 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 z-10">
+            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[210px] md:h-[60px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#5ECBE4]">
               <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14 pt-20 sm:pt-22 md:pt-24 lg:pt-24 overflow-y-auto h-full">
-            <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-8 items-center lg:items-start">
-              <div className="flex justify-center items-center mt-4 sm:mt-2">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8 lg:p-14 pt-16 lg:pt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-start gap-6 sm:gap-8 lg:gap-20">
+              <div className="flex-shrink-0 justify-self-center lg:justify-self-start">
                 <Image
                   src={REMTAPE}
                   alt="REM Tape Strips"
                   width={195}
                   height={195}
-                  className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-48 lg:h-48 mx-auto lg:mx-0 object-contain mt-4 sm:mt-2 md:mt-3 lg:mt-4"
-                  sizes="(max-width: 640px) 7rem, (max-width: 768px) 8rem, (max-width: 1024px) 9rem, 12rem"
+                  className="object-contain w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 mx-auto lg:mx-0"
+                  sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, (max-width: 1024px) 12rem, 195px"
                 />
               </div>
 
-              <div className="flex-1 space-y-3 sm:space-y-4 lg:space-y-5 sm:max-w-[380px] md:max-w-[420px] lg:max-w-[482px]">
-                <div className="space-y-1 sm:space-y-2 md:space-y-3">
+              <div className="flex flex-col space-y-4 max-w-none lg:max-w-[520px]">
+                <div className="space-y-2">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold font-['Poppins'] text-zinc-800">
                     REM Tape Strips
                   </h3>

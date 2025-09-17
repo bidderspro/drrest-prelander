@@ -4,7 +4,7 @@ import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 export default function Sidebar() {
   return (
     <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] flex-shrink-0">
-      <div className="sticky top-8 sm:top-8 lg:top-12">
+      <div className="sticky top-8 sm:top-8 md:top-10 lg:top-12">
         <div className="relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Sidebar() {
             </defs>
           </svg>
 
-          <div className="absolute left-2.5 top-2.5 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
+          <div className="absolute w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[180px] md:h-[50px] left-2.5 top-2.5 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
             <div className="flex items-center gap-2">
               <svg
                 width="22"
@@ -111,18 +111,19 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <div className="absolute inset-0 p-4 sm:p-6 flex flex-col z-10">
-            <div className="flex-1 flex flex-col pt-12 sm:pt-14">
+          <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col z-10">
+            <div className="flex-1 flex flex-col pt-12 sm:pt-14 md:pt-16 lg:pt-20">
               <div className="flex-1 flex flex-col justify-center items-center">
-                <div className="flex justify-center items-center mb-6">
+                <div className="flex justify-center items-center">
                   <Image
                     src={productDrRR}
                     alt="Dr. RestRight Mouth Tape"
-                    width={120}
-                    height={120}
-                    className="w-28 h-28 sm:w-32 sm:h-32 object-contain"
-                    sizes="(max-width: 640px) 7rem, 8rem"
+                    width={203}
+                    height={203}
+                    className="w-32 h-32 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 object-contain"
+                    sizes="(max-width: 640px) 6rem, (max-width: 768px) 7rem, (max-width: 1024px) 8rem, 9rem"
                     priority
+                    style={{ aspectRatio: '1/1' }}
                   />
                 </div>
               </div>
@@ -139,7 +140,7 @@ export default function Sidebar() {
                 
                 <button 
                   type="button" 
-                  className="w-full h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="w-full h-10 sm:h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
                   GET 20% OFF
                 </button>

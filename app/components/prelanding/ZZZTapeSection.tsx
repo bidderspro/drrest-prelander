@@ -13,13 +13,14 @@ export default function ZZZTapeSection() {
           </span>
         </h2>
 
-        <div className="rounded-2xl relative overflow-hidden sm:h-[600px] md:h-[450px] lg:h-[400px]">
+        <div className="relative overflow-hidden rounded-2xl">
           {/* Custom background shape with shadow */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="hidden md:block"
               width="100%"
+              height="100%"
               viewBox="0 0 909 391"
               preserveAspectRatio="none"
               fill="none"
@@ -68,29 +69,29 @@ export default function ZZZTapeSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-6 left-6 z-10">
-            <div className="px-6 py-3 bg-amber-600 rounded-[32px] inline-flex justify-center items-center">
-              <span className="text-white text-base font-semibold font-['Poppins']">
+          <div className="absolute top-2 left-0 sm:top-4 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 z-10">
+            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[245px] md:h-[60px] px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 bg-amber-600 rounded-[32px]">
+              <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
                 Another Good Option
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 p-6 lg:p-14 pt-20 lg:pt-20">
-            <div className="flex flex-col lg:flex-row gap-6 lg:gap-24 items-start">
-              <div className="flex-shrink-0">
+          <div className="relative z-10 p-4 sm:p-6 md:p-8 lg:p-14 pt-16 lg:pt-20">
+            <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-start gap-10 md:gap-12 lg:gap-20">
+              <div className="flex-shrink-0 justify-self-center lg:justify-self-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
                 <Image
                   src={ZZZTAPE}
                   alt="ZZZ Tape"
                   width={195}
                   height={195}
-                  className="w-48 h-48 mx-auto lg:mx-0 object-contain"
+                  className="object-contain w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 mx-auto lg:mx-0"
                   sizes="(max-width: 1024px) 12rem, 195px"
                 />
               </div>
 
-              <div className="flex-1 space-y-6 max-w-[482px]">
-                <div className="space-y-3">
+              <div className="flex flex-col space-y-6 max-w-none lg:max-w-[520px]">
+                <div className="space-y-4">
                   <h3 className="text-lg font-bold font-['Poppins'] text-zinc-800">
                     ZZZ Tape
                   </h3>
