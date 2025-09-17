@@ -46,15 +46,15 @@ export default function ZZZTapeSection() {
               className="block md:hidden w-full h-full"
               width="100%"
               height="100%"
-              viewBox="0 0 370 650"
+              viewBox="0 0 370 580"
               preserveAspectRatio="none"
               fill="none"
             >
               <g filter="url(#filter0_d_101_235)">
-                <path d="M344 10C352.837 10 360 17.1634 360 26V624C360 632.837 352.837 640 344 640H26C17.1634 640 10 632.837 10 624V82.473C10 75.0299 18.5569 70 26 70V70H157C174.673 70 189 55.6731 189 38V27V27C189 19.2088 194.246 10 202.037 10H344Z" fill="white"/>
+                <path d="M344 10C352.837 10 360 17.1634 360 26V554C360 562.837 352.837 570 344 570H26C17.1634 570 10 562.837 10 554V82.473C10 75.0299 18.5569 70 26 70H157C174.673 70 189 55.6731 189 38V27C189 19.2088 194.246 10 202.037 10H344Z" fill="white"/>
               </g>
               <defs>
-                <filter id="filter0_d_101_235" x="0" y="0" width="370" height="650" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <filter id="filter0_d_101_235" x="0" y="0" width="370" height="580" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                   <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset/>
