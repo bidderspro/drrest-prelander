@@ -112,7 +112,7 @@ export default function BestOverallSection() {
             </div>
           </div>
 
-          <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14 pt-16 sm:pt-20 md:pt-24">
+          <div className="relative z-10 p-6 sm:p-6 md:p-10 lg:p-14 pt-16 sm:pt-20 md:pt-24">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-center mt-4 sm:mt-6">
                 <div className="flex items-end justify-center w-[130px] h-[130px] sm:w-[150px] sm:h-[150px] md:w-[170px] md:h-[170px] lg:w-[190px] lg:h-[190px] mt-6 sm:mt-8 lg:mt-10">
@@ -140,7 +140,7 @@ export default function BestOverallSection() {
                   </p>
                 </div>
 
-                <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 md:gap-5">
+                <div className="w-full flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 sm:gap-4 md:gap-5">
                   <button
                     type="button"
                     className="w-full sm:w-36 md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-2 sm:px-3 md:px-4 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-sm sm:text-base md:text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
