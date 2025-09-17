@@ -25,47 +25,30 @@ export default function RunnerUpSection() {
               preserveAspectRatio="none"
               fill="none"
             >
-              <g filter="url(#filter0_d_101_556)">
+              <g filter="url(#filter0_d_101_578)">
                 <path
-                  d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107V107H197C226.823 107 251 82.8234 251 53C251 52.0233 250.974 51.0527 250.923 50.0887C250.217 36.8145 259.047 20 272.34 20H865Z"
+                  d="M865 20C878.255 20 889 30.7452 889 44V347C889 360.255 878.255 371 865 371H44C30.7452 371 20 360.255 20 347V125.627C20 114.58 31.9527 107 43 107V107H232C261.823 107 286 82.8234 286 53C286 52.0233 285.974 51.0527 285.923 50.0887C285.217 36.8145 294.047 20 307.34 20H865Z"
                   fill="white"
                 />
               </g>
               <defs>
                 <filter
-                  id="filter0_d_101_556"
+                  id="filter0_d_101_578"
                   x="0"
                   y="0"
                   width="909"
                   height="391"
                   filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
+                  color-interpolation-filters="sRGB"
                 >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="10" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_101_556"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_101_556"
-                    result="shape"
-                  />
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset/>
+                  <feGaussianBlur stdDeviation="10"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.784314 0 0 0 0 0.560784 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_578"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_578" result="shape"/>
                 </filter>
               </defs>
             </svg>
@@ -74,84 +57,67 @@ export default function RunnerUpSection() {
               className="block md:hidden"
               width="100%"
               height="100%"
-              viewBox="0 0 370 597"
+              viewBox="0 0 370 580"
               preserveAspectRatio="none"
               fill="none"
             >
-              <g filter="url(#filter0_d_101_210)">
+              <g filter="url(#filter0_d_101_235)">
                 <path
-                  d="M344 10C352.837 10 360 17.1634 360 26V571C360 579.837 352.837 587 344 587H26C17.1634 587 10 579.837 10 571V83.3822C10 75.9391 18.5569 70.9092 26 70.9092V70.9092H125C142.673 70.9092 157 56.5823 157 38.9092V26.9092V26.9092C157 19.1487 162.226 10 169.986 10H344Z"
+                  d="M344 10C352.837 10 360 17.1634 360 26V554C360 562.837 352.837 570 344 570H26C17.1634 570 10 562.837 10 554V82.473C10 75.0299 18.5569 70 26 70V70H157C174.673 70 189 55.6731 189 38V27V27C189 19.2088 194.246 10 202.037 10H344Z"
                   fill="white"
                 />
               </g>
               <defs>
                 <filter
-                  id="filter0_d_101_210"
+                  id="filter0_d_101_235"
                   x="0"
                   y="0"
                   width="370"
-                  height="597"
+                  height="580"
                   filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
+                  color-interpolation-filters="sRGB"
                 >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="5" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0.368627 0 0 0 0 0.796078 0 0 0 0 0.894118 0 0 0 0.4 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_101_210"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_101_210"
-                    result="shape"
-                  />
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset/>
+                  <feGaussianBlur stdDeviation="5"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.803922 0 0 0 0 0.498039 0 0 0 0 0.196078 0 0 0 0.4 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_235"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_235" result="shape"/>
                 </filter>
               </defs>
             </svg>
           </div>
 
           {/* Badge */}
-          <div className="absolute top-2  left-0 sm:top-0 sm:left-2 md:top-0 md:left-3 lg:top-4 lg:left-2 z-10">
-            <div className="flex justify-center items-center w-[130px] h-[45px] sm:w-[150px] sm:h-[55px] md:w-[190px] md:h-[67px] px-[20px] py-[10px] gap-[10px] rounded-[32px] bg-[#5ECBE4]">
+          <div className="absolute top-2 left-0 sm:top-0 sm:left-2 md:top-0 md:left-3 lg:top-6 lg:left-0 z-10">
+            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[244px] md:h-[67px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#CD7F32]">
               <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14 pt-20 sm:pt-22 md:pt-24 lg:pt-24">
+          <div className="relative z-10 p-4 sm:p-6 md:p-10 lg:p-14 pt-20 sm:pt-22 md:pt-24 lg:pt-24 overflow-y-auto h-full">
             <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-8 items-center lg:items-start">
-              <div className="flex justify-center items-center mt-6 sm:mt-2">
+              <div className="flex justify-center items-center mt-4 sm:mt-2">
                 <Image
                   src={REMTAPE}
                   alt="REM Tape Strips"
                   width={195}
                   height={195}
-                  className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto lg:mx-0 object-contain mt-10 sm:mt-2 md:mt-3 lg:mt-4"
-                  sizes="(max-width: 640px) 8rem, (max-width: 768px) 9rem, (max-width: 1024px) 10rem, 12rem"
+                  className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-48 lg:h-48 mx-auto lg:mx-0 object-contain mt-4 sm:mt-2 md:mt-3 lg:mt-4"
+                  sizes="(max-width: 640px) 7rem, (max-width: 768px) 8rem, (max-width: 1024px) 9rem, 12rem"
                 />
               </div>
 
-              <div className="flex-1 space-y-4 sm:space-y-5 lg:space-y-6  sm:max-w-[400px] md:max-w-[450px] lg:max-w-[482px]">
-                <div className="space-y-2 sm:space-y-3">
+              <div className="flex-1 space-y-3 sm:space-y-4 lg:space-y-5 sm:max-w-[380px] md:max-w-[420px] lg:max-w-[482px]">
+                <div className="space-y-1 sm:space-y-2 md:space-y-3">
                   <h3 className="text-base sm:text-lg md:text-xl font-bold font-['Poppins'] text-zinc-800">
                     REM Tape Strips
                   </h3>
-                  <p className="w-full text-xs sm:text-sm md:text-base font-normal font-['Poppins'] text-zinc-800 leading-relaxed line-clamp-none">
+                  <p className="w-full text-xs sm:text-sm md:text-base font-normal font-['Poppins'] text-zinc-800 leading-relaxed line-clamp-4 sm:line-clamp-none">
                     REM Tape Strips is gentle and comfortable, which makes it
                     appealing at first glance. But when tested overnight, its
                     biggest weakness showed up fast: the seal simply
