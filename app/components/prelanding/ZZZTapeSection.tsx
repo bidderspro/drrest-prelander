@@ -13,16 +13,16 @@ export default function ZZZTapeSection() {
           </span>
         </h2>
 
-        <div className="relative overflow-hidden rounded-2xl">
+        <div className="relative overflow-hidden rounded-2xl w-full">
           {/* Custom background shape with shadow */}
-          <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 w-full h-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="hidden md:block"
+              className="hidden md:block w-full h-full"
               width="100%"
               height="100%"
               viewBox="0 0 909 391"
-              preserveAspectRatio="none"
+              preserveAspectRatio="xMidYMid slice"
               fill="none"
             >
               <g filter="url(#filter0_d_101_529)">
@@ -43,7 +43,7 @@ export default function ZZZTapeSection() {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="block md:hidden"
+              className="block md:hidden w-full h-full"
               width="100%"
               height="100%"
               viewBox="0 0 370 650"
@@ -54,8 +54,8 @@ export default function ZZZTapeSection() {
                 <path d="M344 10C352.837 10 360 17.1634 360 26V624C360 632.837 352.837 640 344 640H26C17.1634 640 10 632.837 10 624V82.473C10 75.0299 18.5569 70 26 70V70H157C174.673 70 189 55.6731 189 38V27V27C189 19.2088 194.246 10 202.037 10H344Z" fill="white"/>
               </g>
               <defs>
-                <filter id="filter0_d_101_235" x="0" y="0" width="370" height="650" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_101_235" x="0" y="0" width="370" height="650" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset/>
                   <feGaussianBlur stdDeviation="5"/>
@@ -77,8 +77,8 @@ export default function ZZZTapeSection() {
             </div>
           </div>
 
-          <div className="relative z-10 p-4 sm:p-6 md:p-8 lg:p-14 pt-16 lg:pt-20">
-            <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-start gap-10 md:gap-12 lg:gap-20">
+          <div className="relative z-10 p-6  mt-6 sm:mt-8 md:mt-10 lg:mt-12 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-start gap-6 md:gap-12 lg:gap-20 w-full">
               <div className="flex-shrink-0 justify-self-center lg:justify-self-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
                 <Image
                   src={ZZZTAPE}
@@ -90,7 +90,7 @@ export default function ZZZTapeSection() {
                 />
               </div>
 
-              <div className="flex flex-col space-y-6 max-w-none lg:max-w-[520px]">
+              <div className="flex flex-col space-y-6 max-w-none lg:max-w-[520px] w-full">
                 <div className="space-y-4">
                   <h3 className="text-lg font-bold font-['Poppins'] text-zinc-800">
                     ZZZ Tape
@@ -102,10 +102,10 @@ export default function ZZZTapeSection() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 lg:gap-36">
+                <div className="flex flex-row sm:flex-row justify-between items-start sm:items-center gap-4 lg:gap-36 w-full">
                   <button 
                     type="button"
-                    className="w-full sm:w-48 h-14 px-3 bg-blue-700 rounded-xl flex justify-center items-center text-white text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     Check availability
@@ -122,7 +122,7 @@ export default function ZZZTapeSection() {
         </div>
       </div>
       
-      <div className="self-stretch text-zinc-800 text-base md:text-lg font-normal font-['Poppins'] space-y-4">
+      <div className="self-stretch text-zinc-800 text-base md:text-lg font-normal font-['Poppins'] space-y-6 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
         <p>
           ZZZ Tape deserves credit as one of the early pioneers in mouth taping. It helped introduce the idea to the mainstream 
           and built its reputation on one defining feature: an adhesive so strong it almost never comes loose. For sleepers who&apos;ve 

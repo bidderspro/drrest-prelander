@@ -91,15 +91,15 @@ export default function RunnerUpSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-2 left-0 sm:top-4 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 z-10">
-            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[210px] md:h-[60px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#5ECBE4]">
+          <div className="absolute top-0 left-0 sm:top-0 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 z-10">
+            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[45px] md:w-[210px] md:h-[50px] px-[23px] py-[13px] sm:px-4 sm:py-2 md:px-5 md:py-2.5 gap-[10px] rounded-[32px] bg-[#5ECBE4]">
               <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>
             </div>
           </div>
 
-          <div className="relative z-10 p-4 sm:p-6 md:p-8 lg:p-14 pt-16 lg:pt-20">
+          <div className="relative z-10 p-6 sm:p-6 md:p-8 lg:p-14 pt-16 lg:pt-20">
             <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] items-start gap-6 sm:gap-8 lg:gap-20">
               <div className="flex-shrink-0 justify-self-center lg:justify-self-start">
                 <Image
@@ -127,10 +127,10 @@ export default function RunnerUpSection() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-36">
+                <div className="flex flex-row sm:flex-row justify-between items-center sm:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-36">
                   <button
                     type="button"
-                    className="w-full sm:w-36 md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-4 sm:px-5 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="whitespace-nowrap">Check availability</span>

@@ -111,7 +111,7 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col z-10">
+          <div className="absolute inset-0 p-6 sm:p-6 md:p-8 flex flex-col z-10">
             <div className="flex-1 flex flex-col pt-12 sm:pt-14 md:pt-16 lg:pt-20">
               <div className="flex-1 flex flex-col justify-center items-center">
                 <div className="flex justify-center items-center">
