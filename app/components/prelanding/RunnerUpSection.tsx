@@ -91,8 +91,8 @@ export default function RunnerUpSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-2 left-0 sm:top-0 sm:left-2 md:top-0 md:left-3 lg:top-6 lg:left-0 z-10">
-            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[244px] md:h-[67px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#CD7F32]">
+          <div className="absolute top-2 left-0 sm:top-0 sm:left-2 md:top-0 md:left- 2 lg:top-6 lg:left-0 z-10">
+            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[224px] md:h-[65px] px-[23px] py-[13px] gap-[10px] rounded-[32px] bg-[#5ECBE4]">
               <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>

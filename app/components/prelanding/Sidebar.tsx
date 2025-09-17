@@ -4,7 +4,7 @@ import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 export default function Sidebar() {
   return (
     <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] flex-shrink-0">
-      <div className="sticky top-6 sm:top-8">
+      <div className="sticky top-8 sm:top-8 lg:top-12">
         <div className="relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
