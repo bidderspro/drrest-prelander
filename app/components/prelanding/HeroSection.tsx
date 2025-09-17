@@ -12,32 +12,33 @@ export default function HeroSection() {
             2025's Best Mouth Tape For Better Sleep? We Tried The Top
             10, Only One Passed Every Test.
           </h1>
-          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-[9px] self-stretch">
             <div className="flex-shrink-0">
               <Image
                 src={authorProfile}
                 alt="Author"
                 width={64}
                 height={64}
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover"
-                sizes="(max-width: 640px) 56px, 64px"
+                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full object-cover shadow-sm"
+                sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
+                priority
               />
             </div>
-            <div className="text-[#333333] text-base sm:text-lg font-bold font-['Poppins']">
+            <div className="text-[#333333] text-base sm:text-md font-semibold font-['Poppins'] whitespace-nowrap">
               By Dr. Stephen T
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center flex-nowrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 viewBox="0 0 10 10"
                 fill="none"
-                className="w-1.5 h-1.5 mx-1 sm:mx-2"
+                className="w-1.5 h-1.5 mx-1 sm:mx-2 flex-shrink-0"
               >
                 <circle cx="5" cy="5" r="5" fill="#333333" />
               </svg>
-              <div className="text-[#333] text-base sm:text-lg font-normal font-['Inter'] leading-[150%]">
+              <div className="text-[#333] text-sm sm:text-sm font-normal font-['Inter'] leading-[150%] whitespace-nowrap">
                 Updated on Sept 11, 2025
               </div>
             </div>
