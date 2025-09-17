@@ -84,7 +84,7 @@ export default function ProductCard(props: ProductCardProps) {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-auto">
+            <div className="flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 mt-auto">
               <button 
                 type="button" 
                 className="w-full sm:w-44 h-12 px-4 bg-blue-600 rounded-lg flex justify-center items-center whitespace-nowrap hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
