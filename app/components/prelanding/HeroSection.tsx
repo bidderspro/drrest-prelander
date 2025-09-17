@@ -12,7 +12,7 @@ export default function HeroSection() {
             2025's Best Mouth Tape For Better Sleep? We Tried The Top
             10, Only One Passed Every Test.
           </h1>
-          <div className="flex items-center gap-[9px] self-stretch">
+          <div className="flex items-center gap-[9px] self-stretch flex-wrap">
             <div className="flex-shrink-0">
               <Image
                 src={authorProfile}
@@ -24,10 +24,10 @@ export default function HeroSection() {
                 priority
               />
             </div>
-            <div className="text-[#333333] text-base sm:text-md font-semibold font-['Poppins'] whitespace-nowrap">
+            <div className="text-[#333333] text-base sm:text-md font-semibold font-['Poppins']">
               By Dr. Stephen T
             </div>
-            <div className="flex items-center flex-nowrap">
+            <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

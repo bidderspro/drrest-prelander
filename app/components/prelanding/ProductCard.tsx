@@ -32,20 +32,20 @@ export default function ProductCard(props: ProductCardProps) {
       {/* Mobile variant */}
       <div className="lg:hidden">
          <div 
-            className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] relative"
+           className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] relative"
             style={{ 
-              minHeight: '360px',
-              maxWidth: '100%',
-              width: '450px',
-              margin: '0 auto'
+             minHeight: '360px',
+             maxWidth: '100%',
+             width: '100%',
+             margin: '0 auto'
             }}>
           {isBestOverall && (
-            <div className="w-full bg-[#00C88F] flex justify-center items-center gap-2.5  h-[58px] px-[132px] py-[18px] z-10 shadow-md rounded-t-2xl">
+            <div className="w-full bg-[#00C88F] flex justify-center items-center gap-2.5 h-12 sm:h-[58px] px-4 sm:px-6 z-10 shadow-md rounded-t-2xl">
               <p className="text-white text-[10px] sm:text-xs font-semibold font-['Poppins'] whitespace-nowrap">Best Overall</p>
             </div>
           )}
 
-          <div className="w-full flex flex-col gap-4 px-3 sm:px-4 pt-7 sm:pt-8 pb-5 sm:pb-6">
+          <div className="w-full flex flex-col gap-4 px-3 sm:px-4 pt-5 sm:pt-6 pb-5 sm:pb-6">
             <div className="flex justify-center items-center h-36">
               <Image 
                 src={image} 
