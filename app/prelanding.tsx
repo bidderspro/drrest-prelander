@@ -20,10 +20,10 @@ export default function PreLandingPage() {
 
       {/* Main Container (scrollable) */}
       <div className="flex-1 overflow-y-auto overflow-x-hidden scrollbar-invisible">
-        <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-[60px] relative">
-          <div className="lg:flex lg:gap-8 lg:justify-between">
+        <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] relative">
+          <div className="xl:flex xl:gap-8 xl:justify-between">
             {/* Main Content (scrolls) */}
-            <main className="w-full min-w-0 overflow-x-hidden lg:w-[929px] lg:flex lg:flex-col lg:justify-start lg:items-center lg:gap-[33px] lg:flex-shrink-0">
+            <main className="w-full min-w-0 overflow-x-hidden xl:w-[929px] xl:flex xl:flex-col xl:justify-start xl:items-center xl:gap-[33px] xl:flex-shrink-0">
               <HeroSection />
               <HowWeTestedSection />
               <ProductComparisonSection />
@@ -33,16 +33,16 @@ export default function PreLandingPage() {
               <ConclusionSection />
               <AuthorBioSection />
 
-              {/* Sidebar below main content on mobile (<lg) */}
-              <div className="w-full my-4 lg:hidden">
+              {/* Sidebar below main content on mobile (<xl) */}
+              <div className="w-full my-4 xl:hidden">
                 <Sidebar />
               </div>
 
               <FooterSection />
             </main>
 
-            {/* Desktop Sidebar (fixed via sticky) */}
-            <div className="hidden lg:block lg:w-96 xl:w-[26rem] lg:flex-shrink-0 fixed right-0 top-24">
+            {/* Desktop Sidebar (fixed) */}
+            <div className="hidden xl:block xl:w-[26rem] xl:flex-shrink-0 fixed right-0 top-24">
               <Sidebar />
             </div>
           </div>

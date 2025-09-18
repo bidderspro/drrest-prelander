@@ -5,7 +5,7 @@ import leoProfile from "@images/Leo-B.svg";
 export default function AuthorBioSection() {
   return (
     <section className="py-8 lg:py-12">
-      <div className="bg-blue-100 rounded-2xl p-6 lg:p-8 shadow-sm">
+      <div className="max-w-4xl mx-auto bg-blue-100 rounded-2xl p-6 lg:p-8 shadow-sm">
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           <div className="flex-shrink-0">
             <Image

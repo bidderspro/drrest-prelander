@@ -32,9 +32,8 @@ export default function ProductCard(props: ProductCardProps) {
       {/* Mobile variant */}
       <div className="lg:hidden">
          <div 
-           className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] relative"
+           className="w-full bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] relative overflow-hidden"
             style={{ 
-             minHeight: '360px',
              maxWidth: '100%',
              width: '100%',
              margin: '0 auto'
@@ -74,7 +73,7 @@ export default function ProductCard(props: ProductCardProps) {
               
               <div className="space-y-1">
                 <h4 className="text-sm font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
-                <ul className="text-xs font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-4">
+                <ul className="text-xs font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-4 break-words">
                   {descriptionLines.map((line, idx) => (
                     <li key={idx} className="leading-relaxed">
                       {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
@@ -105,19 +104,18 @@ export default function ProductCard(props: ProductCardProps) {
       {/* Desktop variant */}
       <div className="hidden lg:block">
         <div 
-          className={`bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] ${isBestOverall ? "overflow-hidden" : "p-6 lg:p-8"}`}
+          className={`bg-white rounded-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)] items-stretch ${isBestOverall ? "overflow-hidden" : "p-6 lg:p-8"}`}
           style={{ 
             display: 'flex',
             width: '100%',
             maxWidth: '800px',
             height: 'auto',
-            minHeight: '340px',
             alignItems: 'center',
             gap: '0',
             margin: '0 auto'
           }}>
           {isBestOverall && (
-            <div className="w-14 h-[470px] bg-[#00C88F] rounded-tl-2xl rounded-bl-2xl flex items-center justify-center  flex-shrink-0">
+            <div className="w-14 h-auto self-stretch bg-[#00C88F] rounded-tl-2xl rounded-bl-2xl flex items-center justify-center flex-shrink-0">
               <div className=" flex items-center justify-center">
                 <p className="text-white text-base font-semibold font-['Poppins'] whitespace-nowrap origin-center -rotate-90">Best Overall</p>
               </div>
@@ -156,7 +154,7 @@ export default function ProductCard(props: ProductCardProps) {
                   
                   <div className="space-y-1">
                     <h4 className="text-base font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
-                    <ul className="text-sm font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-5">
+                    <ul className="text-sm font-normal font-['Poppins'] text-[#333333] space-y-2 list-disc pl-5 break-words">
                       {descriptionLines.map((line, idx) => (
                         <li key={idx} className="leading-relaxed">
                           {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}

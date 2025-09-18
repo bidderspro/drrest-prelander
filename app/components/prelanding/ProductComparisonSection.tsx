@@ -6,12 +6,12 @@ import ProductCard from "./ProductCard";
 
 export default function ProductComparisonSection() {
   return (
-    <section className="py-8 lg:py-12 px-4 sm:px-6 md:px-8">
+    <section className="py-8 lg:py-12 px-4 sm:px-6 md:px-8 xl:px-10 2xl:px-12">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-['Poppins'] leading-snug sm:leading-[44px] lg:leading-[48px] text-zinc-800 mb-4 sm:mb-8 lg:mb-10">
         The Results: Our Top 3 Picks
       </h2>
 
-      <div className="space-y-8 sm:space-y-10 lg:space-y-12 w-full max-w-[1200px] mx-auto">
+      <div className="space-y-8 sm:space-y-10 lg:space-y-12 w-full max-w-[1200px] xl:max-w-[1200px] 2xl:max-w-[1200px] mx-auto">
         <ProductCard
           image={productDrRR}
           alt="Dr. RestRight Mouth Tape"

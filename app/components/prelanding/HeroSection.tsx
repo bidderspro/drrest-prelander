@@ -6,6 +6,7 @@ import heroImage from "@images/heroImage.svg";
 export default function HeroSection() {
   return (
     <section className="py-8 lg:py-12">
+      <div className="max-w-4xl mx-auto">
       <div className="flex flex-col gap-8 lg:gap-10">
         <div className="flex flex-col gap-6 lg:gap-8">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Poppins'] text-[#333333] leading-tight">
@@ -52,7 +53,7 @@ export default function HeroSection() {
               width={922}
               height={561}
               className="w-full h-auto"
-              sizes="(max-width: 1024px) 100vw, 922px"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 922px, (max-width: 1536px) 922px, 922px"
               priority
             />
           </div>
@@ -98,6 +99,7 @@ export default function HeroSection() {
             grogginess and dry mouth that had plagued them for years.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

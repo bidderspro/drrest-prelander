@@ -6,7 +6,7 @@ import comparisonImg from "@images/mouth-tape-comparision.svg";
 export default function BestOverallSection() {
   return (
     <section className="py-6 sm:py-8 md:py-10 lg:py-12">
-      <div className="space-y-4 sm:space-y-6">
+      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold font-['Poppins'] leading-tight md:leading-[48px] text-zinc-800">
           1. Best Overall: Dr. RestRight Mouth Tape
           <br />
@@ -110,7 +110,7 @@ export default function BestOverallSection() {
             </div>
           </div>
 
-          <div className="relative z-10 p-6 sm:p-6 md:p-10 lg:p-14 pt-16 sm:pt-20 md:pt-24">
+          <div className="relative z-10 p-6 sm:p-6 md:p-10 lg:p-14 xl:p-14 2xl:p-14 pt-16 sm:pt-20 md:pt-24">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-center mt-4 sm:mt-6">
                 <div className="flex items-end justify-center w-[130px] h-[130px] sm:w-[150px] sm:h-[150px] md:w-[170px] md:h-[170px] lg:w-[190px] lg:h-[190px] mt-6 sm:mt-8 lg:mt-10">
@@ -118,6 +118,7 @@ export default function BestOverallSection() {
                     src={productDrRR}
                     alt="Dr. RestRight Mouth Tape"
                     className="object-contain w-full h-full mx-auto top-2 justify-center lg:mx-0"
+                    sizes="(max-width: 640px) 130px, (max-width: 768px) 150px, (max-width: 1024px) 170px, (max-width: 1280px) 190px, (max-width: 1536px) 190px, 190px"
                     priority
                   />
                 </div>

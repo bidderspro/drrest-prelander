@@ -113,6 +113,7 @@ export default function ConclusionSection() {
                     src={productDrRR}
                     alt="Dr. RestRight Mouth Tape"
                     className="object-contain w-full h-full mx-auto top-2 justify-center lg:mx-0"
+                  sizes="(max-width: 640px) 130px, (max-width: 768px) 150px, (max-width: 1024px) 170px, (max-width: 1280px) 190px, (max-width: 1536px) 190px, 190px"
                     priority
                   />
                 </div>

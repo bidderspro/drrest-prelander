@@ -5,7 +5,7 @@ import verifiedIcon from "@images/verified.svg";
 export default function HowWeTestedSection() {
   return (
     <section className="py-8 lg:py-12">
-      <div className="space-y-8 lg:space-y-10">
+      <div className="max-w-4xl mx-auto space-y-8 lg:space-y-10">
         <h2 className="text-2xl sm:text-3xl font-semibold font-['Poppins'] leading-[150%] text-[#333]">
           How We Tested the Top 10 Mouth Tapes
         </h2>
