@@ -107,17 +107,18 @@ export default function RunnerUpSection() {
                   alt="REM Tape Strips"
                   width={195}
                   height={195}
-                  className="object-contain w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 mx-auto lg:mx-0"
-                  sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, (max-width: 1024px) 12rem, (max-width: 1280px) 13rem, (max-width: 1536px) 13rem, 195px"
+                  className="object-contain w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 xl:w-56 xl:h-56 2xl:w-60 2xl:h-60 mx-auto lg:mx-0"
+                  sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, (max-width: 1024px) 12rem, (max-width: 1280px) 14rem, (max-width: 1536px) 15rem, 16rem"
+                  priority
                 />
               </div>
 
-              <div className="flex flex-col space-y-4 max-w-4xl lg:max-w-[520px]">
-                <div className="space-y-2">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold font-['Poppins'] text-zinc-800">
+              <div className="flex flex-col space-y-4 max-w-4xl lg:max-w-[520px] xl:max-w-[580px] 2xl:max-w-[640px]">
+                <div className="space-y-2 sm:space-y-3 md:space-y-4">
+                  <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl font-bold font-['Poppins'] text-zinc-800">
                     REM Tape Strips
                   </h3>
-                  <p className="w-full text-xs sm:text-sm md:text-base font-normal font-['Poppins'] text-zinc-800 leading-relaxed line-clamp-4 sm:line-clamp-none">
+                  <p className="w-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg font-normal font-['Poppins'] text-zinc-800 leading-relaxed line-clamp-4 sm:line-clamp-none">
                     REM Tape Strips is gentle and comfortable, which makes it
                     appealing at first glance. But when tested overnight, its
                     biggest weakness showed up fast: the seal simply
@@ -130,16 +131,16 @@ export default function RunnerUpSection() {
                 <div className="flex flex-row sm:flex-row justify-between items-center sm:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-36">
                   <button
                     type="button"
-                    className="w-full md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full md:w-40 lg:w-48 xl:w-52 2xl:w-56 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="whitespace-nowrap">Check availability</span>
                   </button>
                   <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-                    <span className="text-zinc-800 text-base sm:text-lg md:text-xl font-bold font-['Poppins']">
+                    <span className="text-zinc-800 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl font-bold font-['Poppins']">
                       $17.99
                     </span>
-                    <span className="text-zinc-800 text-xs sm:text-sm md:text-base font-medium font-['Poppins'] line-through">
+                    <span className="text-zinc-800 text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] line-through">
                       $25.99
                     </span>
                   </div>
@@ -150,7 +151,7 @@ export default function RunnerUpSection() {
         </div>
       </div>
 
-      <div className="self-stretch mt-6 sm:mt-8 md:mt-10 text-zinc-800 text-xs sm:text-sm md:text-base font-normal font-['Poppins'] space-y-3 sm:space-y-4">
+      <div className="max-w-4xl mx-auto self-stretch mt-6 sm:mt-8 md:mt-10 text-zinc-800 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Poppins'] space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 px-4 sm:px-6 md:px-8 lg:px-0">
         <p className="leading-relaxed">
           REM Tape Strips earned their spot as a comfortable, budget-friendly
           option — but not without compromises. Testers appreciated the soft,
