@@ -3,8 +3,8 @@ import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 
 export default function Sidebar() {
   return (
-    <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] flex-shrink-0 lg:mt-10">
-      <div className="lg:fixed">
+    <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] 2xl:w-[26rem] flex-shrink-0 lg:mt-10">
+      <div className="lg:fixed xl:static">
         <div className="relative overflow-visible lg:flex lg:w-[374px] lg:h-[539px] lg:px-[20px] lg:py-[22px] lg:items-end lg:gap-[10px] lg:flex-shrink-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Sidebar() {
             </defs>
           </svg>
 
-          <div className="absolute w-[150px] h-[45px] sm:w-[190px] sm:h-[55px] md:w-[170px] md:h-[50px] left-0 md:left-2.5 top-10 md:top-1 sm:top-5 lg:top-10 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
+          <div className="absolute w-[150px] h-[45px] sm:w-[190px] sm:h-[55px] md:w-[170px] md:h-[50px] left-0 md:left-2.5 top-0 md:top-10 sm:top-5 lg:top-10 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
             <div className="flex items-center gap-2">
               <svg
                 width="22"
@@ -111,7 +111,7 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <div className="absolute inset-1 p-10 flex z-10 justify-center items-center">
+          <div className="absolute inset-1 p-6 sm:p-8 md:p-10 flex z-10 justify-center items-center">
             <div className="flex-1 flex flex-col pt-12 sm:pt-14 md:pt-16 lg:pt-20 w-[90%] justify-center items-center align-middle right-0">
               <div className="flex-1 flex flex-col justify-center items-center ">
                 <div className="flex justify-center items-center">
