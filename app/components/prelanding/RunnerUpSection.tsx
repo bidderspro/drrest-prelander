@@ -39,9 +39,9 @@ export default function RunnerUpSection() {
                   width="909"
                   height="391"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset/>
                   <feGaussianBlur stdDeviation="10"/>
@@ -75,9 +75,9 @@ export default function RunnerUpSection() {
                   width="370"
                   height="580"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                   <feOffset/>
                   <feGaussianBlur stdDeviation="5"/>
@@ -91,9 +91,9 @@ export default function RunnerUpSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-3 left-0 sm:top-0 sm:left-4 md:top-4 md:left-4 lg:top-0 lg:left-6 xl:top-2 xl:left-8 2xl:top-0 2xl:left-10 z-10">
-            <div className="flex justify-center items-center w-[150px] h-[40px] sm:w-[165px] sm:h-[45px] md:w-[200px] md:h-[50px] lg:w-[210px] lg:h-[55px] xl:w-[220px] xl:h-[60px] 2xl:w-[230px] 2xl:h-[65px] px-3 py-1.5 sm:px-[23px] sm:py-[13px] md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 2xl:px-7 2xl:py-3.5 gap-2 sm:gap-[10px] rounded-[32px] bg-[#5ECBE4]">
-              <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold font-['Poppins'] whitespace-nowrap">
+          <div className="absolute top-1 left-1 xs:top-2 xs:left-2 sm:top-3 sm:left-4 md:top-4 md:left-5 lg:top-5 lg:left-6 xl:top-6 xl:left-8 2xl:top-8 2xl:left-10 z-10">
+            <div className="flex justify-center items-center w-[140px] h-[36px] xs:w-[150px] xs:h-[40px] sm:w-[165px] sm:h-[45px] md:w-[200px] md:h-[50px] lg:w-[210px] lg:h-[55px] xl:w-[220px] xl:h-[60px] 2xl:w-[230px] 2xl:h-[65px] px-2 py-1 xs:px-3 xs:py-1.5 sm:px-[23px] sm:py-[13px] md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 2xl:px-7 2xl:py-3.5 gap-1 xs:gap-2 sm:gap-[10px] rounded-[32px] bg-[#5ECBE4]">
+              <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>
             </div>

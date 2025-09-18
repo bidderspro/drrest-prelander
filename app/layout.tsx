@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body className={`${inter.variable} ${poppins.variable} antialiased h-screen overflow-hidden`}>
         {children}
