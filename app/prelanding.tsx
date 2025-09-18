@@ -34,7 +34,7 @@ export default function PreLandingPage() {
               <AuthorBioSection />
 
               {/* Sidebar below main content on mobile (<xl) */}
-              <div className="w-full my-4 sm:my-6 md:my-8 lg:my-10 ">
+              <div className="w-full my-4 sm:my-6 md:my-8 lg:my-10 xl:hidden">
                 <Sidebar />
               </div>
 
