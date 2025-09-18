@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="h-screen overflow-y-auto bg-white">
       {/* Header */}
       <PrelandingHeader />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-3 sm:mt-4">
