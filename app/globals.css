@@ -60,3 +60,44 @@ button:hover {
 .section-title {
   @apply text-lg font-bold text-[#333] mb-4;
 }
+
+/* Invisible scrollbar utility - cross-browser */
+.scrollbar-invisible {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-invisible::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Sidebar responsive hooks */
+.sidebar-card {
+  height: clamp(420px, 60vh, 560px);
+}
+
+/* Product image scaling for very small screens */
+.sidebar-product-img {
+  width: clamp(6rem, 20vw, 9rem);
+  height: clamp(6rem, 20vw, 9rem);
+}
+
+@media (max-width: 360px) {
+  .sidebar-product-img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .sidebar-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .sidebar-cta {
+    height: 2.25rem; /* 36px */
+    padding: 0.375rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}

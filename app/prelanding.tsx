@@ -1,4 +1,3 @@
-//
 import PrelandingHeader from "./components/prelanding/PrelandingHeader";
 import HeroSection from "./components/prelanding/HeroSection";
 import HowWeTestedSection from "./components/prelanding/HowWeTestedSection";
@@ -13,37 +12,40 @@ import ZZZTapeSection from "./components/prelanding/ZZZTapeSection";
 
 export default function PreLandingPage() {
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-white flex flex-col overflow-x-hidden">
       {/* Header */}
       <PrelandingHeader />
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Main Content and Sidebar Container */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+      <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-[60px] relative">
+        <div className="lg:flex lg:gap-8 lg:justify-between min-h-0">
           {/* Main Content */}
-          <main className="flex-1 lg:max-w-4xl xl:max-w-5xl">
+          <main className="w-full min-w-0 overflow-x-hidden lg:w-[929px] lg:flex lg:flex-col lg:justify-start lg:items-center lg:gap-[33px] lg:flex-shrink-0 min-h-0">
             <HeroSection />
-
             <HowWeTestedSection />
-
             <ProductComparisonSection />
             <BestOverallSection />
             <RunnerUpSection />
             <ZZZTapeSection />
-
             <ConclusionSection />
-
             <AuthorBioSection />
+
+            {/* Sidebar below main content on mobile (<lg) */}
+            <div className="w-full my-4 lg:hidden">
+              <Sidebar />
+            </div>
+
+            <FooterSection />
           </main>
 
-          {/* Sidebar */}
-          <Sidebar />
+          {/* Desktop Sidebar */}
+          <div className="hidden lg:block lg:flex-shrink-0">
+            <div className="sticky top-24">
+              <Sidebar />
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <FooterSection />
     </div>
   );
 }
