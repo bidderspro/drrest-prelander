@@ -4,7 +4,7 @@ import productDrRR from "@images/Dr-RR-leftside-product-image-1.svg";
 export default function Sidebar() {
   return (
     <aside className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[26rem] flex-shrink-0 lg:mt-10">
-      <div className="fixed ">
+      <div className="lg:fixed">
         <div className="relative overflow-visible lg:flex lg:w-[374px] lg:h-[539px] lg:px-[20px] lg:py-[22px] lg:items-end lg:gap-[10px] lg:flex-shrink-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Sidebar() {
             </defs>
           </svg>
 
-          <div className="absolute w-[165px] h-[45px] sm:w-[200px] sm:h-[55px] md:w-[180px] md:h-[50px] left-2.5 top-10 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
+          <div className="absolute w-[150px] h-[45px] sm:w-[190px] sm:h-[55px] md:w-[170px] md:h-[50px] left-0 md:left-2.5 top-10 md:top-1 sm:top-5 lg:top-10 z-10 flex justify-center items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-[23px] md:py-[13px] gap-[10px] bg-[#00C88F] rounded-[32px]">
             <div className="flex items-center gap-2">
               <svg
                 width="22"
