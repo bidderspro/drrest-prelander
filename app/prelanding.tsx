@@ -43,7 +43,7 @@ export default function PreLandingPage() {
 
             {/* Desktop Sidebar (fixed via sticky) */}
             <div className="hidden lg:block lg:flex-shrink-0">
-              <div className="sticky top-24 lg:top-24 mt-24">
+              <div className="sticky top-24 lg:top-24">
                 <Sidebar />
               </div>
             </div>
