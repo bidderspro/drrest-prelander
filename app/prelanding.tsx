@@ -19,7 +19,7 @@ export default function PreLandingPage() {
       </div>
 
       {/* Main Container (scrollable) */}
-      <div className="flex-1 overflow-y-auto overflow-x-hidden">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden scrollbar-invisible">
         <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-[60px] relative">
           <div className="lg:flex lg:gap-8 lg:justify-between">
             {/* Main Content (scrolls) */}
