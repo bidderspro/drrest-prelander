@@ -102,8 +102,8 @@ export default function BestOverallSection() {
           </div>
 
           {/* Badge */}
-            <div className="absolute top-2 left-1 sm:top-4 sm:left-4 md:top-6 md:left-3 lg:top-6 lg:left-2 z-10">
-            <div className="flex justify-center items-center bg-[#00C88F] rounded-[32px] w-[190px] h-[45px] px-[23px] py-[13px] gap-[10px] md:w-[272px] md:h-[67px]">
+            <div className="absolute top-2 left-1 sm:top-4 sm:left-4 md:top-6 md:left-6 lg:top-6 lg:left-6 z-10">
+            <div className="flex justify-center items-center bg-[#00C88F] rounded-[32px] w-[170px] h-[45px] px-[23px] py-[13px] gap-[10px] md:w-[290px] md:h-[67px]">
               <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-['Poppins'] whitespace-nowrap">
                 Best Overall Mouth Tape
               </span>

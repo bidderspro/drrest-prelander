@@ -91,9 +91,9 @@ export default function RunnerUpSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-0 left-0 sm:top-0 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 z-10">
-            <div className="flex justify-center items-center w-[165px] h-[45px] sm:w-[200px] sm:h-[45px] md:w-[210px] md:h-[50px] px-[23px] py-[13px] sm:px-4 sm:py-2 md:px-5 md:py-2.5 gap-[10px] rounded-[32px] bg-[#5ECBE4]">
-              <span className="text-white text-xs sm:text-sm md:text-base font-semibold font-['Poppins'] whitespace-nowrap">
+          <div className="absolute top-0 left-0 sm:top-0 sm:left-2 md:top-4 md:left-4 lg:top-6 lg:left-6 xl:top-6 xl:left-8 2xl:top-10 2xl:left-10 z-10">
+            <div className="flex justify-center items-center w-[150px] h-[40px] sm:w-[165px] sm:h-[45px] md:w-[200px] md:h-[50px] lg:w-[210px] lg:h-[55px] xl:w-[220px] xl:h-[60px] 2xl:w-[230px] 2xl:h-[65px] px-3 py-1.5 sm:px-[23px] sm:py-[13px] md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 2xl:px-7 2xl:py-3.5 gap-2 sm:gap-[10px] rounded-[32px] bg-[#5ECBE4]">
+              <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold font-['Poppins'] whitespace-nowrap">
                 Runner Up
               </span>
             </div>
