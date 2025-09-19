@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import type { ReactNode } from "react";
 
 type ProductCardProps = {
   image: StaticImageData;
@@ -7,6 +8,7 @@ type ProductCardProps = {
   shortDescription: string;
   descriptionLines: string[];
   ratingLabel: string; // e.g., "4.9 Ratings"
+  rating?: number; // e.g., 4.9 - optional rating value
   price: string; // e.g., "$23.99"
   oldPrice?: string; // optional, e.g., "$29.99"
   ctaLabel: string; // e.g., "GET 20% OFF" or "Check Availability"
@@ -18,9 +20,9 @@ export default function ProductCard(props: ProductCardProps) {
     image,
     alt,
     title,
-    shortDescription,
     descriptionLines,
     ratingLabel,
+    rating = 5, // Default to 5 if not provided
     price,
     oldPrice,
     ctaLabel,
@@ -28,6 +30,34 @@ export default function ProductCard(props: ProductCardProps) {
   } = props;
 
   const isFirstCard = title === "Dr. RestRight Mouth Tape";
+
+  // Function to render stars based on rating value (rounded to nearest 0.5)
+  const renderStars = (value: number, maxStars: number = 5): ReactNode[] => {
+    const clamped = Math.max(0, Math.min(value, maxStars));
+    const rounded = Math.round(clamped * 2) / 2; // nearest 0.5
+
+    const stars: ReactNode[] = [];
+    for (let i = 0; i < maxStars; i++) {
+      const fillFraction = Math.min(Math.max(rounded - i, 0), 1); // 0..1
+      stars.push(
+        <span key={`star-${i}`} className="relative inline-block align-middle">
+          {/* Base (empty) star */}
+          <svg className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 lg:w-4 lg:h-4 xl:w-5 xl:h-5" viewBox="0 0 24 24" fill="#E5E7EB" aria-hidden="true">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+          </svg>
+          {/* Filled overlay star (partial width) */}
+          {fillFraction > 0 && (
+            <span className="absolute top-0 left-0 h-full overflow-hidden" style={{ width: `${fillFraction * 100}%` }}>
+              <svg className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 lg:w-4 lg:h-4 xl:w-5 xl:h-5" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            </span>
+          )}
+        </span>
+      );
+    }
+    return stars;
+  };
 
   return (
     <div className="space-y-4 w-full">
@@ -57,11 +87,7 @@ export default function ProductCard(props: ProductCardProps) {
 
             <div className="flex items-center gap-1 xs:gap-2 justify-center">
               <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
+                {renderStars(rating)}
               </div>
               <span className="text-zinc-800 text-[10px] xs:text-xs sm:text-sm font-medium font-['Poppins']">{ratingLabel}</span>
             </div>
@@ -131,11 +157,7 @@ export default function ProductCard(props: ProductCardProps) {
                 </div>
                 <div className="flex items-center gap-1.5 xl:gap-2 justify-center lg:justify-start">
                   <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 xl:w-5 h-4 xl:h-5" viewBox="0 0 24 24" fill="#FACC15" aria-hidden="true">
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                      </svg>
-                    ))}
+                    {renderStars(rating)}
                   </div>
                   <span className="text-zinc-800 text-xs xl:text-sm font-medium font-['Poppins']">{ratingLabel}</span>
                 </div>
