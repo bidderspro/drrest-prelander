@@ -73,6 +73,10 @@ export default function PrivacyPage() {
           {/* How We Use */}
           <div className="mt-10 sm:mt-12 space-y-4">
             <h2 className="text-zinc-800 text-2xl font-bold">2. How We Use Your Information</h2>
+            <p className="text-zinc-800 text-base sm:text-lg leading-relaxed">
+              We use collected data to:
+            </p>
+            <br/> 
             <ul className="list-disc pl-5 space-y-2 text-zinc-800 text-base sm:text-lg leading-relaxed">
               <li>Provide, operate, and improve our website and services.</li>
               <li>Deliver newsletters, updates, or promotional content (if you’ve opted in).</li>
@@ -108,17 +112,18 @@ export default function PrivacyPage() {
             <div className="space-y-4 text-zinc-800 text-base sm:text-lg leading-relaxed">
               <p>We respect your privacy. We do not sell or rent your personal information.</p>
               <p>We may share data only in the following circumstances:</p>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>
+              <ul className="list-disc pl-6 space-y-4">
+                <li className='text-zinc-800 text-sm sm:text-lg leading-relaxed'>
                   With trusted third-party service providers (e.g., email platforms, analytics,
                   hosting) who help us operate our site.
                 </li>
-                <li>
+                <li className='text-zinc-800 text-sm sm:text-lg leading-relaxed'>
                   With affiliate partners, but only to track purchases or commissions (your personal
                   details are not shared with them).
                 </li>
-                <li>To comply with legal requirements, regulations, or government requests.</li>
+              
               </ul>
+                <p className='text-zinc-800 text-base sm:text-lg leading-relaxed'>To comply with legal requirements, regulations, or government requests.</p>
             </div>
           </div>
 
