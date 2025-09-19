@@ -18,7 +18,7 @@ export default function ProductCard(props: ProductCardProps) {
     image,
     alt,
     title,
-    // shortDescription is not used directly
+    shortDescription,
     descriptionLines,
     ratingLabel,
     price,
@@ -26,6 +26,8 @@ export default function ProductCard(props: ProductCardProps) {
     ctaLabel,
     isBestOverall,
   } = props;
+
+  const isFirstCard = title === "Dr. RestRight Mouth Tape";
 
   return (
     <div className="space-y-4 w-full">
@@ -66,13 +68,16 @@ export default function ProductCard(props: ProductCardProps) {
 
             <div className="space-y-1.5 xs:space-y-2">
               <h3 className="text-sm xs:text-base sm:text-lg font-semibold font-['Poppins'] text-[#0F172A]">{title}</h3>
+              {isFirstCard && (
+                <p className="text-[#333] text-[10px] xs:text-xs sm:text-sm font-normal font-['Poppins']">Dr. RestRight was the clear winner across every category.</p>
+              )}
               
               <div className="space-y-1">
                 <h4 className="text-xs xs:text-sm sm:text-base font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
                 <ul className="text-[10px] xs:text-xs sm:text-sm font-normal font-['Poppins'] text-[#333333] space-y-1.5 xs:space-y-2 list-disc pl-3 xs:pl-4 break-words">
                   {descriptionLines.map((line, idx) => (
                     <li key={idx} className="leading-relaxed">
-                      {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
+                      {idx === 0 ? <span className="text-[#333] font-medium">{line}</span> : line}
                     </li>
                   ))}
                 </ul>
@@ -139,13 +144,16 @@ export default function ProductCard(props: ProductCardProps) {
               <div className="flex-1 flex flex-col justify-between gap-3 xl:gap-4">
                 <div className="space-y-1.5 xl:space-y-2">
                   <h3 className="text-lg xl:text-xl font-semibold font-['Poppins'] text-[#0F172A]">{title}</h3>
+                  {isFirstCard && (
+                    <p className="text-[#333] text-xs xl:text-sm font-normal font-['Poppins']">Dr. RestRight was the clear winner across every category.</p>
+                  )}
                   
                   <div className="space-y-1">
                     <h4 className="text-sm xl:text-base font-medium font-['Poppins'] text-[#0F172A]">Description:</h4>
                     <ul className="text-xs xl:text-sm font-normal font-['Poppins'] text-[#333333] space-y-1.5 xl:space-y-2 list-disc pl-4 xl:pl-5 break-words">
                       {descriptionLines.map((line, idx) => (
                         <li key={idx} className="leading-relaxed">
-                          {idx === 0 ? <span className="text-emerald-600 font-medium">{line}</span> : line}
+                          {idx === 0 ? <span className="text-[#333] font-medium">{line}</span> : line}
                         </li>
                       ))}
                     </ul>

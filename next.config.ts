@@ -1,18 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // Remove turbopack config as it's no longer needed in newer Next.js versions
-  distDir: 'out', // Specify the build output directory
+  output: 'export',
+  trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    unoptimized: true,
   },
-  // Enable React strict mode for better development experience
   reactStrictMode: true,
 };
 
