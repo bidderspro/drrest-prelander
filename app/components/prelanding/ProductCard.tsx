@@ -77,7 +77,7 @@ export default function ProductCard(props: ProductCardProps) {
                 <ul className="text-[10px] xs:text-xs sm:text-sm font-normal font-['Poppins'] text-[#333333] space-y-1.5 xs:space-y-2 list-disc pl-3 xs:pl-4 break-words">
                   {descriptionLines.map((line, idx) => (
                     <li key={idx} className="leading-relaxed">
-                      {idx === 0 ? <span className="text-[#333] font-medium">{line}</span> : line}
+                      {line}
                     </li>
                   ))}
                 </ul>
@@ -153,7 +153,7 @@ export default function ProductCard(props: ProductCardProps) {
                     <ul className="text-xs xl:text-sm font-normal font-['Poppins'] text-[#333333] space-y-1.5 xl:space-y-2 list-disc pl-4 xl:pl-5 break-words">
                       {descriptionLines.map((line, idx) => (
                         <li key={idx} className="leading-relaxed">
-                          {idx === 0 ? <span className="text-[#333] font-medium">{line}</span> : line}
+                          {line}
                         </li>
                       ))}
                     </ul>
