@@ -102,9 +102,9 @@ export default function BestOverallSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-1 left-2 xs:top-3 xs:left-3 sm:top-4 sm:left-4 md:top-6 md:left-6 lg:top-6 lg:left-6 xl:top-8 xl:left-8 2xl:top-10 2xl:left-10 z-10 p-1 xs:p-1.5 sm:p-2 md:p-2.5 lg:p-3 xl:p-3.5 2xl:p-4">
-            <div className="flex justify-center items-center bg-[#00C88F] rounded-full px-2.5 xs:px-3.5 sm:px-4.5 md:px-5.5 lg:px-6 xl:px-7 2xl:px-8 py-1 xs:py-1.5 sm:py-2 md:py-2.5 lg:py-2.5 xl:py-3 2xl:py-3.5 h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 xl:h-16 2xl:h-18">
-              <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold font-['Poppins'] whitespace-nowrap">
+          <div className="absolute top-1 left-2 xs:top-3 xs:left-3 sm:top-4 sm:left-4 md:top-6 md:left-2 lg:top-6 lg:left-2 xl:top-8 xl:left-2 2xl:top-10 2xl:left-0 z-10">
+            <div className="flex justify-center items-center bg-[#00C88F] rounded-[32px] w-[190px] xs:w-[210px] sm:w-[230px] md:w-[250px] lg:w-[270px] xl:w-[270px] 2xl:w-[280px] h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 xl:h-16 2xl:h-18 px-3 xs:px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 2xl:px-9 py-1 xs:py-1.5 sm:py-2 md:py-2.5 lg:py-3 xl:py-3.5 2xl:py-4">
+              <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl font-semibold font-['Poppins'] whitespace-nowrap">
                 Best Overall Mouth Tape
               </span>
             </div>
