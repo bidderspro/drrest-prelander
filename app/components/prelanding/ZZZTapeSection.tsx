@@ -133,10 +133,10 @@ export default function ZZZTapeSection() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 xs:gap-4 sm:gap-5 md:gap-6 lg:gap-8 w-full">
+                <div className="flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 xs:gap-4 sm:gap-5 md:gap-6 lg:gap-8 w-full">
                   <button 
                     type="button"
-                    className="w-full sm:w-auto md:w-40 lg:w-44 h-9 xs:h-10 sm:h-11 md:h-12 lg:h-14 px-2 xs:px-3 sm:px-4 md:px-5 lg:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full sm:w-auto md:w-40 lg:w-44 h-9 xs:h-10 sm:h-11 md:h-12 lg:h-14 px-2 xs:px-3 sm:px-4 md:px-5 lg:px-6 bg-[#2163C2] rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base font-medium font-['Poppins'] hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="whitespace-nowrap">Check availability</span>

@@ -13,7 +13,7 @@ export default function BackButton({ label = 'Back', className = '' }: BackButto
     <button
       type="button"
       onClick={() => router.back()}
-      className={`inline-flex items-center gap-2 text-sm sm:text-base text-zinc-700 hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded transition-colors ${className}`}
+      className={`inline-flex items-center gap-2 text-sm sm:text-base text-zinc-700 hover:text-zinc-900 focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2 rounded transition-colors ${className}`}
       aria-label={label}
     >
       <svg

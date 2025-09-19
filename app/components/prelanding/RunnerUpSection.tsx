@@ -131,7 +131,7 @@ export default function RunnerUpSection() {
                 <div className="flex flex-row sm:flex-row justify-between items-center sm:items-center gap-4 sm:gap-6 md:gap-8 lg:gap-36">
                   <button
                     type="button"
-                    className="w-full md:w-40 lg:w-48 xl:w-52 2xl:w-56 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full md:w-40 lg:w-48 xl:w-52 2xl:w-56 h-10 sm:h-12 md:h-14 px-4 sm:px-2 md:px-6 bg-[#2163C2] rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="whitespace-nowrap">Check availability</span>

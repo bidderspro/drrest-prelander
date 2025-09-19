@@ -6,7 +6,7 @@ import comparisonImg from "@images/mouth-tape-comparision.svg";
 export default function BestOverallSection() {
   return (
     <section className="py-6 sm:py-8 md:py-10 lg:py-12">
-      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
+      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 px-4 sm:px-6 md:px-8 lg:px-10">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold font-['Poppins'] leading-tight md:leading-[48px] text-zinc-800">
           1. Best Overall: Dr. RestRight Mouth Tape
           <br />
@@ -102,9 +102,9 @@ export default function BestOverallSection() {
           </div>
 
           {/* Badge */}
-          <div className="absolute top-0 left-1 sm:top-4 sm:left-4 md:top-6 md:left-6 lg:top-6 lg:left-6 z-10">
-            <div className="flex justify-center items-center bg-[#00C88F] rounded-[32px] w-[185px] h-[40px] xs:w-[180px] xs:h-[45px] sm:w-[250px] sm:h-[50px] md:w-[250px] md:h-[60px] lg:w-[290px] lg:h-[67px] px-3 xs:px-4 sm:px-5 md:px-6 py-2 xs:py-3 gap-2">
-              <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg font-semibold font-['Poppins'] whitespace-nowrap">
+          <div className="absolute top-1 left-2 xs:top-3 xs:left-3 sm:top-4 sm:left-4 md:top-6 md:left-6 lg:top-6 lg:left-6 xl:top-8 xl:left-8 2xl:top-10 2xl:left-10 z-10 p-1 xs:p-1.5 sm:p-2 md:p-2.5 lg:p-3 xl:p-3.5 2xl:p-4">
+            <div className="flex justify-center items-center bg-[#00C88F] rounded-full px-2.5 xs:px-3.5 sm:px-4.5 md:px-5.5 lg:px-6 xl:px-7 2xl:px-8 py-1 xs:py-1.5 sm:py-2 md:py-2.5 lg:py-2.5 xl:py-3 2xl:py-3.5 h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 xl:h-16 2xl:h-18">
+              <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold font-['Poppins'] whitespace-nowrap">
                 Best Overall Mouth Tape
               </span>
             </div>
@@ -124,7 +124,7 @@ export default function BestOverallSection() {
                 </div>
               </div>
 
-              <div className="flex-1 space-y-3 xs:space-y-4 sm:space-y-5 lg:space-y-6 max-w-full xs:max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[482px]">
+              <div className="flex-1 space-y-3 xs:space-y-4 sm:space-y-5 lg:space-y-6 max-w-full xs:max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[482px] px-2 xs:px-3 sm:px-4 md:px-5 lg:px-6">
                 <div className="space-y-2 sm:space-y-3">
                   <h3 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-['Poppins'] text-zinc-800">
                     Dr. RestRight Mouth Tape
@@ -142,7 +142,7 @@ export default function BestOverallSection() {
                 <div className="w-full flex flex-row justify-between items-center gap-2 xs:gap-3 sm:gap-4 md:gap-5">
                   <button
                     type="button"
-                    className="w-full xs:w-32 sm:w-36 md:w-40 lg:w-48 h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 px-1 xs:px-2 sm:px-3 md:px-4 bg-blue-700 rounded-md xs:rounded-lg sm:rounded-xl flex justify-center items-center text-white hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full xs:w-32 sm:w-36 md:w-40 lg:w-48 h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 px-1 xs:px-2 sm:px-3 md:px-4 bg-[#2163C2] rounded-md xs:rounded-lg sm:rounded-xl flex justify-center items-center text-white hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] whitespace-nowrap">Check availability</span>
@@ -172,7 +172,7 @@ export default function BestOverallSection() {
           />
         </div>
 
-        <div className="space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6">
+        <div className="space-y-3 xs:space-y-4 sm:space-y-5 md:space-y-6 px-2 xs:px-3 sm:px-4 md:px-5 lg:px-6">
           <div className="text-[11px] xs:text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Poppins'] text-zinc-800 space-y-2 xs:space-y-3 sm:space-y-4">
             <p className="leading-relaxed">
               From the very first night, Dr. RestRight stood out. It combines
@@ -223,7 +223,7 @@ export default function BestOverallSection() {
 
           <button
             type="button"
-            className="w-full h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 px-3 xs:px-4 sm:px-5 md:px-6 py-1.5 xs:py-2 sm:py-2.5 md:py-3 bg-blue-700 rounded-md xs:rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="w-full h-8 xs:h-9 sm:h-10 md:h-12 lg:h-14 px-3 xs:px-4 sm:px-5 md:px-6 py-1.5 xs:py-2 sm:py-2.5 md:py-3 bg-[#2163C2] rounded-md xs:rounded-lg sm:rounded-xl flex justify-center items-center text-white text-xs xs:text-sm sm:text-base md:text-lg font-medium font-['Poppins'] hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
             aria-label="Check product availability"
           >
             <span>Check availability</span>

@@ -138,9 +138,9 @@ export default function Sidebar() {
                   comfortable every night.
                 </p>
                 
-                <button 
+              <button 
                   type="button" 
-                  className="w-full h-10 sm:h-12 px-3 py-2 bg-blue-700 rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="w-full h-10 sm:h-12 px-3 py-2 bg-[#2163C2] rounded-xl text-white text-xs sm:text-sm font-medium font-['Poppins'] hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                 >
                   GET 20% OFF
                 </button>

@@ -85,7 +85,7 @@ export default function ProductCard(props: ProductCardProps) {
             </div>
           )}
 
-          <div className="w-full flex flex-col gap-3 xs:gap-4 px-2 xs:px-3 sm:px-4 md:px-6 pt-4 xs:pt-5 sm:pt-6 pb-4 xs:pb-5 sm:pb-6">
+          <div className="w-full flex flex-col gap-3 xs:gap-4 px-4 xs:px-5 sm:px-6 md:px-8 pt-4 xs:pt-5 sm:pt-6 pb-4 xs:pb-5 sm:pb-6">
             <div className="flex justify-center items-center h-28 xs:h-32 sm:h-36 md:h-40">
               <Image
                 src={image}
@@ -132,16 +132,16 @@ export default function ProductCard(props: ProductCardProps) {
               </div>
             </div>
 
-            <div className="flex flex-col xs:flex-row justify-between items-center gap-2 xs:gap-3 mt-auto pt-2 xs:pt-3">
+            <div className="flex flex-row justify-between items-center gap-2 xs:gap-3 mt-auto pt-2 xs:pt-3">
               <button
                 type="button"
-                className="w-full xs:w-auto sm:w-44 md:w-48 h-10 xs:h-11 sm:h-12 px-2 xs:px-3 sm:px-4 bg-blue-600 rounded-lg flex justify-center items-center whitespace-nowrap hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="flex-1 flex justify-center items-center h-[36px] xs:h-[38px] sm:h-[42px] md:h-[46px] px-2 xs:px-3 sm:px-4 md:px-5 py-2 xs:py-2.5 sm:py-3 bg-[#2163C2] rounded-lg hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
               >
-                <span className="text-white text-xs xs:text-sm sm:text-base font-medium font-['Poppins'] uppercase">
+                <span className="text-white text-xs xs:text-sm sm:text-base md:text-lg font-medium font-['Poppins'] uppercase whitespace-nowrap">
                   {ctaLabel}
                 </span>
               </button>
-              <div className="w-full xs:w-auto flex justify-center xs:justify-end items-center gap-1.5 xs:gap-2 mt-2 xs:mt-0">
+              <div className="flex justify-end items-center gap-1.5 xs:gap-2">
                 <span className="text-zinc-800 text-sm xs:text-base sm:text-lg font-bold font-['Poppins']">
                   {price}
                 </span>
@@ -226,9 +226,9 @@ export default function ProductCard(props: ProductCardProps) {
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 xl:gap-4 mt-auto pt-2 xl:pt-3">
                   <button
                     type="button"
-                    className="w-full sm:w-44 xl:w-48 2xl:w-52 h-10 xl:h-12 px-4 xl:px-6 bg-blue-600 rounded-lg flex justify-center items-center whitespace-nowrap hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="flex-1 sm:flex-initial flex justify-center items-center h-[42px] xl:h-[46px] 2xl:h-[50px] px-4 lg:px-5 xl:px-6 2xl:px-8 py-2 lg:py-2.5 xl:py-3 bg-[#2163C2] rounded-lg hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                   >
-                    <span className="text-white text-sm xl:text-base font-medium font-['Poppins'] uppercase">
+                    <span className="text-white text-sm xl:text-base 2xl:text-lg font-medium font-['Poppins'] uppercase whitespace-nowrap">
                       {ctaLabel}
                     </span>
                   </button>

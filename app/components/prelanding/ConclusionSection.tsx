@@ -134,10 +134,10 @@ export default function ConclusionSection() {
                   </p>
                 </div>
 
-                <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 md:gap-5">
+                <div className="w-full flex flex-row sm:flex-row justify-between items-center sm:items-center gap-3 sm:gap-4 md:gap-5">
                   <button
                     type="button"
-                    className="w-full sm:w-36 md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-2 sm:px-3 md:px-4 bg-blue-700 rounded-lg sm:rounded-xl flex justify-center items-center text-white text-sm sm:text-base md:text-lg font-medium font-['Poppins'] hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full sm:w-36 md:w-40 lg:w-48 h-10 sm:h-12 md:h-14 px-2 sm:px-3 md:px-4 bg-[#2163C2] rounded-lg sm:rounded-xl flex justify-center items-center text-white text-sm sm:text-base md:text-lg font-medium font-['Poppins'] hover:bg-[#1a50a0] transition-colors focus:outline-none focus:ring-2 focus:ring-[#2163C2] focus:ring-offset-2"
                     aria-label="Check product availability"
                   >
                     <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Poppins'] whitespace-nowrap">Check availability</span>
