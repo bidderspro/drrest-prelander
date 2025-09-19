@@ -24,6 +24,7 @@ export default function ProductComparisonSection() {
               "Breathable design allowed safe airflow in case of nasal congestion."
             ]}
             ratingLabel="4.9 Ratings"
+            rating={4.9}
             price="$23.99"
             oldPrice="$29.99"
             ctaLabel="GET 20% OFF"
@@ -41,6 +42,7 @@ export default function ProductComparisonSection() {
               "A good starter option, but not reliable for consistent results.",
             ]}
             ratingLabel="4.5 Ratings"
+            rating={4.5}
             price="$17.99"
             oldPrice="$25.00"
             ctaLabel="Check Availability"
@@ -57,6 +59,7 @@ export default function ProductComparisonSection() {
               "Not ideal for sensitive or aging skin.",
             ]}
             ratingLabel="4.3 Ratings"
+            rating={4.3}
             price="$30.00"
             ctaLabel="Check Availability"
           />
