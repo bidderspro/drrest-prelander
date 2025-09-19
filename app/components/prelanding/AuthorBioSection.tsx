@@ -1,49 +1,45 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import leoProfile from "@images/Leo-B.svg";
+import stephenProfile from "@images/Stephen-Taylor.svg";
 
 export default function AuthorBioSection() {
   return (
     <section className="py-8 lg:py-12">
-      <div className="max-w-4xl mx-auto bg-blue-100 rounded-2xl p-6 lg:p-8 shadow-sm">
-        <div className="flex flex-col sm:flex-row gap-6 items-start">
-          <div className="flex-shrink-0">
+      <div className="max-w-4xl flex flex-col mx-auto bg-blue-100 rounded-2xl p-6 lg:p-8 shadow-sm">
+        <div className="flex flex-col w-full max-w-[805px] mx-auto gap-4 items-start">
+          
+          {/* Profile Image + Name */}
+          <div className="flex flex-row gap-2 items-center w-full">
             <Image
-              src={leoProfile}
-              alt="Leo B."
+              src={stephenProfile}
+              alt="Stephen Taylor"
               width={84}
               height={84}
-              className="w-20 h-20 rounded-xl object-cover shadow-sm"
-              sizes="80px"
+              className="rounded-xl object-cover shadow-sm"
               priority
             />
-          </div>
-          <div className="flex-1 space-y-4">
-            <h3 className="text-zinc-800 text-xl font-semibold font-['Poppins'] leading-relaxed">
-              Leo B.
+            <h3 className="text-zinc-800 text-xl font-semibold leading-relaxed">
+              Stephen Taylor
             </h3>
-            <div className="text-base font-normal font-['Poppins'] leading-relaxed text-zinc-800">
-              <p>
-                The <span className="font-bold">Verified Buyers Guide</span> is a trusted resource for practical, no-nonsense sleep
-                advice, founded by Dr. Stephen Taylor — a 52 year old
-                physician who personally battled years of snoring, CPAP
-                frustration, and restless nights.
-              </p>
-              <p className="mt-3">
-                After seeing how poor sleep was stealing energy and health from both his
-                patients and himself, Dr. Taylor made it his mission to
-                find solutions that actually work for people over 45.
-                Today, Verified Buyers Guide brings together hands-on
-                testing, medical insight, and real-world experience to
-                help readers breathe easier, sleep deeper, and wake up
-                with energy they thought they'd lost for good.
-              </p>
-            </div>
+          </div>
+
+          {/* Content */}
+          <div className="w-full space-y-4 text-base text-zinc-800 leading-relaxed">
+            <p>
+              <span className="font-bold">Verified Buyers Guide exists for one purpose: to make sure you never waste another dollar on hype.</span> <br />
+            </p>
+            <p>
+              Founded by Stephen Taylor, a former investigative journalist who spent a decade unmasking scams and exposing corporate spin, the site was born from his own hard lesson: the internet is flooded with fake reviews and pay-to-play endorsements designed to trick everyday buyers.
+            </p>
+            <p>
+              That betrayal of trust became Stephen's obsession. He built Verified Buyers Guide as the antidote—a platform where every recommendation must survive three filters: real ownership, real testing, and real results. No affiliate tricks. No bought stars. No scripted "influencer" gush. Just the raw truth about what's worth your money and what isn't. </p>
+            
+            <p>
+              From wellness tools to household essentials to the latest sleep aids, the promise never changes: if it hasn't been verified, it doesn't belong here. Because in a world where anyone can manufacture five stars, Verified Buyers Guide is the one place that still earns them. </p>
+            
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
