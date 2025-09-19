@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import authorProfile from "@images/profile-image.svg";
+import stephenProfile from "@images/Stephen-Taylor.svg";
 import heroImage from "@images/heroImage.svg";
 
 export default function HeroSection() {
@@ -16,7 +16,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-[9px] self-stretch flex-wrap">
             <div className="flex-shrink-0">
               <Image
-                src={authorProfile}
+                src={stephenProfile}
                 alt="Author"
                 width={64}
                 height={64}
@@ -26,7 +26,7 @@ export default function HeroSection() {
               />
             </div>
             <div className="text-[#333333] text-base sm:text-md font-semibold font-['Poppins']">
-              By Dr. Stephen T
+              By Stephen Taylor
             </div>
             <div className="flex items-center">
               <svg
